@@ -2,7 +2,7 @@ no-layout
 ==================
   a SASS library for you to write CSS layout easily.
 
-*** flexbox Mixins
+### flexbox Mixins
 
   flexbox历史上三种标准草案导致世面上流通的浏览器三种实现的兼容性问题，flexbox Mixins正是为了解决这个问题。以下是用法介绍：
 
@@ -28,7 +28,7 @@ no-layout
 
 * item-flex: value , +item-flex(num) 设置容器内子元素如何分配空间。
 
-*** flexbox utilities
+### flexbox utilities
 
   语义化定义布局方法，既可以作为单独的布局类(.)使用，也可以作为作为其他布局容器extend的占位符(%)
 
