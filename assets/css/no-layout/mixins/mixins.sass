@@ -1,0 +1,66 @@
+/* float clearfix */
+=clearfix
+  &:before,
+  &:after
+    content: " "
+    display: table
+  &:after
+    clear: both
+
+/* box-sizing setting */
+=box-sizing($boxsizing)
+  box-sizing: $boxsizing
+  -moz-box-sizing: $boxsizing
+
+/* compatible transition when the transition-property is transform  */
+@function prefix($property, $prefixes: (webkit moz o ms))
+  $vendor-prefixed-properties: transform background-clip background-size
+  $result: ()
+  @each $prefix in $prefixes
+    @if index($vendor-prefixed-properties, $property)
+      $property: -#{$prefix}-#{$property}
+    $result: append($result, $property)
+  @return $result
+
+@function trans-prefix($transition, $prefix: moz)
+  $prefixed: ()
+  @each $trans in $transition
+    $prop-name: nth($trans, 1)
+    $vendor-prop-name: prefix($prop-name, $prefix)
+    $prop-vals: nth($trans, 2)
+    $prefixed: append($prefixed, ($vendor-prop-name $prop-vals), comma)
+  @return $prefixed
+
+=transition($values...)
+  $transitions: ()
+  @each $declaration in $values
+    $prop: nth($declaration, 1)
+    $prop-opts: ()
+    $length: length($declaration)
+    @for $i from 2 through $length
+      $prop-opts: append($prop-opts, nth($declaration, $i))
+    $trans: ($prop, $prop-opts)
+    $transitions: append($transitions, $trans, comma)
+  -webkit-transition: trans-prefix($transitions, webkit)
+  transition: $values
+
+/* compatible transform  */
+=transform($values)
+  -webkit-transform: $values
+  transform: $values
+=transform-origin($values)
+  -webkit-transform-origin: $values
+  transform-origin: $values
+
+/* compatible animation  */
+=animation($values)
+  -webkit-animation: $values
+  animation: $values
+=animation-timing-function($values)
+  -webkit-animation-timing-function: $values
+  animation-timing-function: $values
+=keyframes($name)
+  @-webkit-keyframes #{$name}
+    @content
+  @keyframes #{$name}
+    @content

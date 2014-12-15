@@ -2,6 +2,12 @@ no-layout
 ==================
   a SASS library for you to write CSS layout easily.
 
+### use directory
+
+  Please import no-layout.sass in your main sass file, just like:
+
+    @import assets/css/no-layout/no-layout.sass
+
 ### flexbox Mixins
 
   flexbox历史上三种标准草案导致世面上流通的浏览器三种实现的兼容性问题，flexbox Mixins正是为了解决这个问题。以下是用法介绍：
@@ -66,3 +72,5 @@ command
 ==================
 * npm install
 * gulp
+
+visit http://no-layout.diandian.com/post/des for more information
