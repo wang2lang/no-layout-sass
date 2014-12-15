@@ -73,4 +73,4 @@ command
 * npm install
 * gulp
 
-visit http://no-layout.diandian.com/post/des for more information
+visit http://no-layout.diandian.com/post/des , http://no-layout.diandian.com/post/utilities for more information

@@ -1,0 +1,29 @@
+body
+  padding: 36px
+
+.demo-container
+  margin: 10px auto 20px
+  padding: 10px 15px
+  background-color: #ccc
+
+.one,
+.two,
+.three
+  margin: 5px 10px
+  padding: 5px 10px
+  background-color: #fff
+
+
+.nav
+  @extend %horizontal
+  @extend %justified
+  margin: 0
+  padding: 3px 25px
+  background-color: #ccc
+  border-radius: 5px
+  list-style: none
+
+  > li
+    padding: 5px 20px
+    border: 1px solid red
+    border-radius: 3px

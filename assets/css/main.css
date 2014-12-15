@@ -554,6 +554,17 @@ body {
 /*
  *just for extends for other containers
  */
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -ms-flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-direction: row; }
+
 /*
  * ennable container to be a flex container and make items in the container layout vertical
  */
@@ -638,6 +649,12 @@ body {
 /*
  *just for extends for other containers
  */
+.nav {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between; }
+
 /*
  * self-align
  */
@@ -688,3 +705,26 @@ body {
 /*
  *just for extends for other containers
  */
+body {
+  padding: 36px; }
+
+.demo-container {
+  margin: 10px auto 20px;
+  padding: 10px 15px;
+  background-color: #ccc; }
+
+.one, .two, .three {
+  margin: 5px 10px;
+  padding: 5px 10px;
+  background-color: #fff; }
+
+.nav {
+  margin: 0;
+  padding: 3px 25px;
+  background-color: #ccc;
+  border-radius: 5px;
+  list-style: none; }
+  .nav > li {
+    padding: 5px 20px;
+    border: 1px solid red;
+    border-radius: 3px; }
