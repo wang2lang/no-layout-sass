@@ -73,4 +73,14 @@ command
 * npm install
 * gulp
 
+compatible
+=================
+IE9 +
+Chrome 22+ (低版本可能需要将行内元素设置display:block)
+Sarify 3.1+
+IOS Sarify 3.2+
+Android Browser 2.1+ (低版本可能需要将行内元素设置display:block)
+
 visit http://no-layout.diandian.com/post/des , http://no-layout.diandian.com/post/utilities for more information
+
+
