@@ -1,0 +1,146 @@
+/*flex utility class */
+
+/*
+ * set children items' percentage of the remainder
+ */
+@for $i from 1 to 20
+  .flex-#{$i}
+    +item-flex($i)
+
+/*
+ *just for extends for other containers
+ */
+@for $i from 1 to 20
+  %flex-#{$i}
+    +item-flex($i)
+
+/*
+ * ennable container to be a flex container and make items in the container layout horizontal
+ */
+.horizontal
+  +flex
+  +flex-direction(row)
+
+/*
+ *just for extends for other containers
+ */
+%horizontal
+  +flex
+  +flex-direction(row)
+
+/*
+ * ennable container to be a flex container and make items in the container layout vertical
+ */
+.vertical
+  +flex
+  +flex-direction(column)
+
+/*
+ *just for extends for other containers
+ */
+%vertical
+  +flex
+  +flex-direction(column)
+
+/*
+ * By default, children stretch to fit the cross-axis, bellow class will enable them to start,
+ * center or end accros the main axis.
+ */
+.start
+  +align-items(flex-start)
+.center
+  +align-items(center)
+.end
+  +align-items(flex-end)
+
+/*
+ *just for extends for other containers
+ */
+%start
+  +align-items(flex-start)
+%center
+  +align-items(center)
+%end
+  +align-items(flex-end)
+
+/*
+ * Justifying content
+ */
+.start-justified
+  +justify-content(flex-start)
+.center-justified
+  +justify-content(center)
+.end-justified
+  +justify-content(flex-end)
+.around-justified
+  +justify-content(space-around)
+.around-justified
+  +justify-content(space-around)
+.justified
+  +justify-content(space-between)
+
+/*
+ *just for extends for other containers
+ */
+%start-justified
+  +justify-content(flex-start)
+%center-justified
+  +justify-content(center)
+%end-justified
+  +justify-content(flex-end)
+%around-justified
+  +justify-content(space-around)
+%around-justified
+  +justify-content(space-around)
+%justified
+  +justify-content(space-between)
+%inline-flex
+  +inline-flex
+
+/*
+ * self-align
+ */
+.self-start
+  +align-self(flex-start)
+.self-center
+  +align-self(center)
+.self-end
+  +align-self(end)
+.self-stretch
+  +align-self(stretch)
+
+/*
+ *just for extends for other containers
+ */
+%self-start
+  +align-self(flex-start)
+%self-center
+  +align-self(center)
+%self-end
+  +align-self(end)
+%self-stretch
+  +align-self(stretch)
+
+/*
+ * enable wrapped layouts
+ */
+.wrap
+  +flex-wrap(wrap)
+
+/*
+ *just for extends for other containers
+ */
+%wrap
+  +flex-wrap(wrap)
+
+/*
+ * mirror layout direction
+ */
+.reverse
+  +flex-direction(row-reverse)
+
+/*
+ *just for extends for other containers
+ */
+%reverse
+  +flex-direction(row-reverse)
