@@ -83,7 +83,7 @@ compatible
 
 visit these websites for more infomation
 * http://no-layout.diandian.com/post/des
-* http://no-layout.diandian.com/post/utilities for more information
+* http://no-layout.diandian.com/post/utilities
 * http://www.w3cplus.com/preprocessor/sass-bring-change.html
 * https://github.com/sass/node-sass
 
