@@ -12,6 +12,30 @@
   box-sizing: $boxsizing
   -moz-box-sizing: $boxsizing
 
+/* border radius */
+=border-top-radius($radius)
+  border-top-right-radius: $radius
+  border-top-left-radius: $radius
+
+=border-right-radius($radius)
+  border-bottom-right-radius: $radius
+  border-top-right-radius: $radius
+
+=border-bottom-radius($radius)
+  border-bottom-right-radius: $radius
+  border-bottom-left-radius: $radius
+
+=border-left-radius($radius)
+  border-bottom-left-radius: $radius
+  border-top-left-radius: $radius
+
+/* text overflow ellipsis */
+=text-overflow
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap
+
+
 /* compatible transition when the transition-property is transform  */
 @function prefix($property, $prefixes: (webkit moz o ms))
   $vendor-prefixed-properties: transform background-clip background-size
