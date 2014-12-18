@@ -39,9 +39,11 @@ no-layout
   语义化定义布局方法，既可以作为单独的布局类(.)使用，也可以作为作为其他布局容器extend的占位符(%)
 
 * .horizontal | %horizontal 设置容器为flexbox布局环境，且子元素水平布局
+
 * .vertical | %vertical 设置容器为flexbox布局环境，且子元素垂直布局
 
 * .flex-1, .flex-2, ... , .flex-20 | %flex-1, %flex-2, ... , %flex-20，设置flexbox容器内子元素所占水平或者垂直的百分比
+
 * .start | %start ，设置子元素在垂直方向上贴近flexbox容器上边缘
 
 * .center | %center，设置子元素在flexbox容器垂直方向上居中
@@ -57,6 +59,14 @@ no-layout
 * .around-justified | %.around-justified，设置子元素在flexbox容器里水平均匀摊开
 
 * .justified | %justified，设置子元素在flexbox容器里水平两端对齐，中间均匀摊开
+
+* .selft-start | %self-start，设置元素自身flexbox容器里与堆叠方向垂直方向上靠上边缘
+
+* .selft-center | %self-center，设置元素自身flexbox容器里与堆叠方向垂直方向上居中
+
+* .selft-end | %self-end，设置元素自身flexbox容器里与堆叠方向垂直方向上靠近下边缘
+
+* .selft-strech | %self-end，设置元素自身flexbox容器里与堆叠方向垂直方向上伸展开靠近上下边缘
 
 * .wrap | %wrap， 可以设置容器内元素超过容器容纳范围时换行
 
