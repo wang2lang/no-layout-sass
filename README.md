@@ -10,7 +10,7 @@ no-layout
 
 ### flexbox Mixins
 
-  flexbox历史上三种标准草案导致世面上流通的浏览器三种实现的兼容性问题，flexbox Mixins正是为了解决这个问题。以下是用法介绍：
+  flexbox历史上三种标准草案导致世面上流通的浏览器三种实现的兼容性问题，flexbox Mixins正是为了解决这个问题。(align-selft在旧版本浏览器中不支持，做移动端开发时慎用)以下是用法介绍：
 
 * display: flex ，+flex  设置容器为flexbox布局环境(IE9行内元素需要设置display:block先)。
 
