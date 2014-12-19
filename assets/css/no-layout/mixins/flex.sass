@@ -130,7 +130,7 @@ $flex-value-map: (auto: auto, nowrap: none, wrap: wrap, wrap-reverse: wrap-rever
 /*
  * justify-content: flex-start | flex-end | center | space-between | space-arround
  */
-=justify-content($value)
+=justify-content($value...)
   // old syntax: no space-arround support
   @if $value != space-arround
     -webkit-box-pack: getValue($value)
@@ -143,7 +143,7 @@ $flex-value-map: (auto: auto, nowrap: none, wrap: wrap, wrap-reverse: wrap-rever
 /*
  * align-items: flex-start | flex-end | center | baseline | stretch
  */
-=align-items($value)
+=align-items($value...)
   // old syntax
   -webkit-box-align: getValue($value)
   // ms syntax
@@ -155,7 +155,7 @@ $flex-value-map: (auto: auto, nowrap: none, wrap: wrap, wrap-reverse: wrap-rever
 /*
  * align-content: flex-start | flex-end | center | space-between | space-around | stretch
  */
-=align-content($value)
+=align-content($value...)
   // old syntax: not supported
   // ms syntax
   -ms-flex-line-pack: getValue($value)
@@ -198,7 +198,7 @@ $flex-value-map: (auto: auto, nowrap: none, wrap: wrap, wrap-reverse: wrap-rever
  * flex-basis: <length> | auto // default auto
  * flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
  */
-=item-flex($value)
+=item-flex($value...)
   // old syntax
   -webkit-box-flex: $value
   // ms syntax

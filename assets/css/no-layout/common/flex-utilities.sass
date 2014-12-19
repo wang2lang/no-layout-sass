@@ -1,11 +1,13 @@
 /*flex utility class */
+@import '../mixins/flex.sass'
 
 /*
  * set children items' percentage of the remainder
  */
+
 @for $i from 1 to 20
   .flex-#{$i}
-    +item-flex($i)
+    +item-flex($i !important)
 
 /*
  *just for extends for other containers
@@ -47,19 +49,23 @@
  * center or end accros the main axis.
  */
 .start
-  +align-items(flex-start)
+  +align-items(flex-start !important)
+
 .center
-  +align-items(center)
+  +align-items(center !important)
+
 .end
-  +align-items(flex-end)
+  +align-items(flex-end !important)
 
 /*
  *just for extends for other containers
  */
 %start
   +align-items(flex-start)
+
 %center
   +align-items(center)
+
 %end
   +align-items(flex-end)
 
@@ -67,17 +73,17 @@
  * Justifying content
  */
 .start-justified
-  +justify-content(flex-start)
+  +justify-content(flex-start !important)
 .center-justified
-  +justify-content(center)
+  +justify-content(center !important)
 .end-justified
-  +justify-content(flex-end)
+  +justify-content(flex-end !important)
 .around-justified
-  +justify-content(space-around)
+  +justify-content(space-around !important)
 .around-justified
-  +justify-content(space-around)
+  +justify-content(space-around !important)
 .justified
-  +justify-content(space-between)
+  +justify-content(space-between !important)
 
 /*
  *just for extends for other containers
@@ -105,7 +111,7 @@
 .self-center
   +align-self(center)
 .self-end
-  +align-self(end)
+  +align-self(flex-end)
 .self-stretch
   +align-self(stretch)
 
@@ -117,7 +123,7 @@
 %self-center
   +align-self(center)
 %self-end
-  +align-self(end)
+  +align-self(flex-end)
 %self-stretch
   +align-self(stretch)
 
