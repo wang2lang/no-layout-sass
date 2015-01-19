@@ -325,12 +325,13 @@ body {
   font-size: 14px; }
 
 /* float clearfix */
-/* box-sizing setting */
-/* border radius */
+/* background color */
 /* text overflow ellipsis */
+/* border radius */
 /* compatible transition when the transition-property is transform  */
 /* compatible transform  */
 /* compatible animation  */
+/* box-sizing setting */
 /*
  * FLEX MIXINS
  *
@@ -418,7 +419,11 @@ body {
  * flex-basis: <length> | auto // default auto
  * flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
  */
-/*flex utility class */
+/* utility class, one begin with % is for extending in your code */
+/* float clearfix */
+/* background color */
+/* text overflow ellipsis */
+/* border radius */
 /*
  * FLEX MIXINS
  *
@@ -506,9 +511,512 @@ body {
  * flex-basis: <length> | auto // default auto
  * flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
  */
+/* compatible transition when the transition-property is transform  */
+/* compatible transform  */
+/* compatible animation  */
+/* box-sizing setting */
+/* clear float */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+.clearfix:after {
+  clear: both; }
+
+/* set box sizing */
+.box-sizing-border {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.box-sizing-content {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+/* float left or right */
+.pull-right {
+  float: right !important; }
+
+.pull-left {
+  float: left !important; }
+
+/* hide or show */
+.hide {
+  display: none !important; }
+
+.show {
+  display: block !important; }
+
+.invisible {
+  visibility: hidden !important; }
+
+.visible {
+  visibility: visible !important; }
+
+/* ul li reset */
+.ul-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+/* text overflow ellipsis */
+.text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+/* useful margin sizes */
+.mt-1 {
+  margin-top: 1px !important; }
+
+.mt-2 {
+  margin-top: 2px !important; }
+
+.mt-3 {
+  margin-top: 3px !important; }
+
+.mt-4 {
+  margin-top: 4px !important; }
+
+.mt-5 {
+  margin-top: 5px !important; }
+
+.mt-6 {
+  margin-top: 6px !important; }
+
+.mt-7 {
+  margin-top: 7px !important; }
+
+.mt-8 {
+  margin-top: 8px !important; }
+
+.mt-9 {
+  margin-top: 9px !important; }
+
+.mt-10 {
+  margin-top: 10px !important; }
+
+.mt-11 {
+  margin-top: 11px !important; }
+
+.mt-12 {
+  margin-top: 12px !important; }
+
+.mt-13 {
+  margin-top: 13px !important; }
+
+.mt-14 {
+  margin-top: 14px !important; }
+
+.mt-15 {
+  margin-top: 15px !important; }
+
+.mt-16 {
+  margin-top: 16px !important; }
+
+.mt-17 {
+  margin-top: 17px !important; }
+
+.mt-18 {
+  margin-top: 18px !important; }
+
+.mt-19 {
+  margin-top: 19px !important; }
+
+.mt-20 {
+  margin-top: 20px !important; }
+
+.mt-21 {
+  margin-top: 21px !important; }
+
+.mt-22 {
+  margin-top: 22px !important; }
+
+.mt-23 {
+  margin-top: 23px !important; }
+
+.mt-24 {
+  margin-top: 24px !important; }
+
+.mt-25 {
+  margin-top: 25px !important; }
+
+.mt-26 {
+  margin-top: 26px !important; }
+
+.mt-27 {
+  margin-top: 27px !important; }
+
+.mt-28 {
+  margin-top: 28px !important; }
+
+.mt-29 {
+  margin-top: 29px !important; }
+
+.mt-30 {
+  margin-top: 30px !important; }
+
+.mr-1 {
+  margin-right: 1px !important; }
+
+.mr-2 {
+  margin-right: 2px !important; }
+
+.mr-3 {
+  margin-right: 3px !important; }
+
+.mr-4 {
+  margin-right: 4px !important; }
+
+.mr-5 {
+  margin-right: 5px !important; }
+
+.mr-6 {
+  margin-right: 6px !important; }
+
+.mr-7 {
+  margin-right: 7px !important; }
+
+.mr-8 {
+  margin-right: 8px !important; }
+
+.mr-9 {
+  margin-right: 9px !important; }
+
+.mr-10 {
+  margin-right: 10px !important; }
+
+.mr-11 {
+  margin-right: 11px !important; }
+
+.mr-12 {
+  margin-right: 12px !important; }
+
+.mr-13 {
+  margin-right: 13px !important; }
+
+.mr-14 {
+  margin-right: 14px !important; }
+
+.mr-15 {
+  margin-right: 15px !important; }
+
+.mr-16 {
+  margin-right: 16px !important; }
+
+.mr-17 {
+  margin-right: 17px !important; }
+
+.mr-18 {
+  margin-right: 18px !important; }
+
+.mr-19 {
+  margin-right: 19px !important; }
+
+.mr-20 {
+  margin-right: 20px !important; }
+
+.mr-21 {
+  margin-right: 21px !important; }
+
+.mr-22 {
+  margin-right: 22px !important; }
+
+.mr-23 {
+  margin-right: 23px !important; }
+
+.mr-24 {
+  margin-right: 24px !important; }
+
+.mr-25 {
+  margin-right: 25px !important; }
+
+.mr-26 {
+  margin-right: 26px !important; }
+
+.mr-27 {
+  margin-right: 27px !important; }
+
+.mr-28 {
+  margin-right: 28px !important; }
+
+.mr-29 {
+  margin-right: 29px !important; }
+
+.mr-30 {
+  margin-right: 30px !important; }
+
+.mb-1 {
+  margin-bottom: 1px !important; }
+
+.mb-2 {
+  margin-bottom: 2px !important; }
+
+.mb-3 {
+  margin-bottom: 3px !important; }
+
+.mb-4 {
+  margin-bottom: 4px !important; }
+
+.mb-5 {
+  margin-bottom: 5px !important; }
+
+.mb-6 {
+  margin-bottom: 6px !important; }
+
+.mb-7 {
+  margin-bottom: 7px !important; }
+
+.mb-8 {
+  margin-bottom: 8px !important; }
+
+.mb-9 {
+  margin-bottom: 9px !important; }
+
+.mb-10 {
+  margin-bottom: 10px !important; }
+
+.mb-11 {
+  margin-bottom: 11px !important; }
+
+.mb-12 {
+  margin-bottom: 12px !important; }
+
+.mb-13 {
+  margin-bottom: 13px !important; }
+
+.mb-14 {
+  margin-bottom: 14px !important; }
+
+.mb-15 {
+  margin-bottom: 15px !important; }
+
+.mb-16 {
+  margin-bottom: 16px !important; }
+
+.mb-17 {
+  margin-bottom: 17px !important; }
+
+.mb-18 {
+  margin-bottom: 18px !important; }
+
+.mb-19 {
+  margin-bottom: 19px !important; }
+
+.mb-20 {
+  margin-bottom: 20px !important; }
+
+.mb-21 {
+  margin-bottom: 21px !important; }
+
+.mb-22 {
+  margin-bottom: 22px !important; }
+
+.mb-23 {
+  margin-bottom: 23px !important; }
+
+.mb-24 {
+  margin-bottom: 24px !important; }
+
+.mb-25 {
+  margin-bottom: 25px !important; }
+
+.mb-26 {
+  margin-bottom: 26px !important; }
+
+.mb-27 {
+  margin-bottom: 27px !important; }
+
+.mb-28 {
+  margin-bottom: 28px !important; }
+
+.mb-29 {
+  margin-bottom: 29px !important; }
+
+.mb-30 {
+  margin-bottom: 30px !important; }
+
+.ml-1 {
+  margin-left: 1px !important; }
+
+.ml-2 {
+  margin-left: 2px !important; }
+
+.ml-3 {
+  margin-left: 3px !important; }
+
+.ml-4 {
+  margin-left: 4px !important; }
+
+.ml-5 {
+  margin-left: 5px !important; }
+
+.ml-6 {
+  margin-left: 6px !important; }
+
+.ml-7 {
+  margin-left: 7px !important; }
+
+.ml-8 {
+  margin-left: 8px !important; }
+
+.ml-9 {
+  margin-left: 9px !important; }
+
+.ml-10 {
+  margin-left: 10px !important; }
+
+.ml-11 {
+  margin-left: 11px !important; }
+
+.ml-12 {
+  margin-left: 12px !important; }
+
+.ml-13 {
+  margin-left: 13px !important; }
+
+.ml-14 {
+  margin-left: 14px !important; }
+
+.ml-15 {
+  margin-left: 15px !important; }
+
+.ml-16 {
+  margin-left: 16px !important; }
+
+.ml-17 {
+  margin-left: 17px !important; }
+
+.ml-18 {
+  margin-left: 18px !important; }
+
+.ml-19 {
+  margin-left: 19px !important; }
+
+.ml-20 {
+  margin-left: 20px !important; }
+
+.ml-21 {
+  margin-left: 21px !important; }
+
+.ml-22 {
+  margin-left: 22px !important; }
+
+.ml-23 {
+  margin-left: 23px !important; }
+
+.ml-24 {
+  margin-left: 24px !important; }
+
+.ml-25 {
+  margin-left: 25px !important; }
+
+.ml-26 {
+  margin-left: 26px !important; }
+
+.ml-27 {
+  margin-left: 27px !important; }
+
+.ml-28 {
+  margin-left: 28px !important; }
+
+.ml-29 {
+  margin-left: 29px !important; }
+
+.ml-30 {
+  margin-left: 30px !important; }
+
 /*
- * set children items' percentage of the remainder
+ * flex utilitiy classes, note that one begin width % is for extending in your code
  */
+/*
+ * FLEX MIXINS
+ *
+ * NOTE: ! for reason to adapt the prefix
+ *
+ *
+ * Old Syntax / 2009 Syntax / Box Syntax / WD
+ * http://www.w3.org/TR/2009/WD-css3-flexbox-20090723/
+ *
+ *   -webkit
+ *     Chrome 4-20
+ *     Safari 3.1-6.0
+ *   ! iOS Safari 3.2-6.1
+ *   ! Android Browser 2.1-4.3
+ *     Opera 12.1
+ *   -moz
+ *     Firefox 2-21
+ *
+ *
+ * MS Syntax / 2012 Syntax / Flexbox Syntax / WD
+ * http://www.w3.org/TR/2012/WD-css3-flexbox-20120322/
+ *
+ *   -ms
+ *   ! IE 10 Desktop & Mobile
+ *
+ *
+ * New Syntax / 2014 Syntax / Flex Syntax / CR
+ * http://www.w3.org/TR/css3-flexbox/
+ *
+ *   -webkit
+ *     Chrome 21-27
+ *   ! Safari 6.1+
+ *   ! iOS Safari 7+
+ *   ! Android Browser 4.4+
+ *     Opera 15-16
+ *   N/A
+ *     Chrome 28+
+ *     Firefox 22+
+ *     Android Firefox 29+
+ *     Opera 17+
+ *     IE 10+
+ */
+/*
+ * FUNCTIONS
+ */
+/*
+ * Flex Container Properties
+ */
+/*
+ * display: flex
+ */
+/*
+ * display: inline-flex
+ */
+/*
+ * flex-direction: row | row-reverse | column | column-reverse
+ */
+/*
+ * flex-wrap: nowrap | wrap | wrap-reverse
+ */
+/*
+ * flex-flow: <‘flex-direction’> || <‘flex-wrap’>
+ */
+/*
+ * justify-content: flex-start | flex-end | center | space-between | space-arround
+ */
+/*
+ * align-items: flex-start | flex-end | center | baseline | stretch
+ */
+/*
+ * align-content: flex-start | flex-end | center | space-between | space-around | stretch
+ */
+/*
+ * Flex Item Properties
+ */
+/*
+ * order: <integer>
+ */
+/*
+ * align-self: auto | flex-start | flex-end | center | baseline | stretch
+ */
+/*
+ * flex-grow: <number> // default 0
+ * flex-shrink: <number> // default 1
+ * flex-basis: <length> | auto // default auto
+ * flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+ */
+/* set children items' percentage of the remainder */
 .flex-1 {
   -webkit-box-flex: 1 !important;
   -ms-flex: 1 !important;
@@ -623,12 +1131,14 @@ body {
   -webkit-flex: 19 !important;
   flex: 19 !important; }
 
-/*
- *just for extends for other containers
- */
-/*
- * ennable container to be a flex container and make items in the container layout horizontal
- */
+/* ennable container to be a flex container */
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+
+/* ennable container to be a flex container and make items in the container layout horizontal */
 .horizontal {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -640,9 +1150,6 @@ body {
   -webkit-flex-direction: row;
   flex-direction: row; }
 
-/*
- *just for extends for other containers
- */
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -654,9 +1161,7 @@ body {
   -webkit-flex-direction: row;
   flex-direction: row; }
 
-/*
- * ennable container to be a flex container and make items in the container layout vertical
- */
+/* ennable container to be a flex container and make items in the container layout vertical */
 .vertical {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -668,9 +1173,6 @@ body {
   -webkit-flex-direction: column;
   flex-direction: column; }
 
-/*
- *just for extends for other containers
- */
 /*
  * By default, children stretch to fit the cross-axis, bellow class will enable them to start,
  * center or end accros the main axis.
@@ -693,12 +1195,7 @@ body {
   -webkit-align-items: flex-end !important;
   align-items: flex-end !important; }
 
-/*
- *just for extends for other containers
- */
-/*
- * Justifying content
- */
+/* Justifying content */
 .start-justified {
   
   
@@ -723,30 +1220,19 @@ body {
   -webkit-justify-content: space-around !important;
   justify-content: space-around !important; }
 
-.around-justified {
-  
-  
-  -webkit-justify-content: space-around !important;
-  justify-content: space-around !important; }
-
 .justified {
   
   
   -webkit-justify-content: space-between !important;
   justify-content: space-between !important; }
 
-/*
- *just for extends for other containers
- */
 .nav {
   
   
   -webkit-justify-content: space-between;
   justify-content: space-between; }
 
-/*
- * self-align
- */
+/* self-align */
 .self-start {
   -ms-flex-item-align: start;
   -webkit-align-self: flex-start;
@@ -767,23 +1253,13 @@ body {
   -webkit-align-self: stretch;
   align-self: stretch; }
 
-/*
- *just for extends for other containers
- */
-/*
- * enable wrapped layouts
- */
+/* enable wrapped layouts */
 .wrap {
   -ms-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap; }
 
-/*
- *just for extends for other containers
- */
-/*
- * mirror layout direction
- */
+/* mirror layout direction */
 .reverse {
   -webkit-box-direction: reverse;
   -webkit-box-orient: horizontal;
@@ -791,9 +1267,6 @@ body {
   -webkit-flex-direction: row-reverse;
   flex-direction: row-reverse; }
 
-/*
- *just for extends for other containers
- */
 body {
   padding: 36px; }
 
@@ -816,4 +1289,7 @@ body {
   .nav > li {
     padding: 5px 20px;
     border: 1px solid red;
-    border-radius: 3px; }
+    border-radius: 3px;
+    background-color: green; }
+    .nav > li:hover {
+      background-color: #004d00; }

@@ -6,11 +6,11 @@ no-layout
 
   Please import no-layout.sass in your main sass file, just like:
 
-    @import assets/css/no-layout/no-layout.sass
+    @import 'assets/css/no-layout/no-layout.sass'
 
 ### flexbox Mixins
 
-  flexbox历史上三种标准草案导致世面上流通的浏览器三种实现的兼容性问题，flexbox Mixins正是为了解决这个问题。(align-selft在旧版本浏览器中不支持，做移动端开发时慎用)以下是用法介绍：
+  flexbox历史上三种标准草案导致世面上流通的浏览器三种实现的兼容性问题，mixins/flex.sass 正是为了解决这个问题。(align-selft在旧版本浏览器中不支持，做移动端开发时慎用)以下是用法介绍：
 
 * display: flex ，+flex  设置容器为flexbox布局环境(IE9行内元素需要设置display:block先)。
 
@@ -37,6 +37,7 @@ no-layout
 ### flexbox utilities
 
   语义化定义布局方法，既可以作为单独的布局类(.)使用，也可以作为作为其他布局容器extend的占位符(%)
+* .flex | %flex 设置容器为flexbox布局环境
 
 * .horizontal | %horizontal 设置容器为flexbox布局环境，且子元素水平布局
 
@@ -44,29 +45,29 @@ no-layout
 
 * .flex-1, .flex-2, ... , .flex-20 | %flex-1, %flex-2, ... , %flex-20，设置flexbox容器内子元素所占水平或者垂直的百分比
 
-* .start | %start ，设置子元素在垂直方向上贴近flexbox容器上边缘
+* .start | %start ，设置子元素在flexbox容器里与子元素堆叠方向垂直的方向上向左或者向上堆叠
 
-* .center | %center，设置子元素在flexbox容器垂直方向上居中
+* .center | %center，设置子元素在flexbox容器与子元素堆叠方向的垂直方向上居中堆叠
 
-* .end | %end，设置子元素贴近flexbox容器垂直方向上下边缘
+* .end | %end，设置子元素在flexbox容器中与子元素堆叠方向的垂直方向上向右或者向下堆叠
 
-* .start-justified | %start-justified，设置子元素在flexbox容器里水平向左堆叠
+* .start-justified | %start-justified，设置子元素在flexbox容器里与子元素堆叠方向同向上向左或向上堆叠
 
-* .center-justified | %start-justified， 设置子元素在flexbox容器里水平居中堆叠
+* .center-justified | %start-justified， 设置子元素在flexbox容器里与子元素堆叠方向同向上居中堆叠
 
-* .end-justified | %end-justified，设置子元素在flexbox容器里水平向右堆叠
+* .end-justified | %end-justified，设置子元素在flexbox容器里与子元素堆叠方向同向上向右或者向下堆叠
 
-* .around-justified | %.around-justified，设置子元素在flexbox容器里水平均匀摊开
+* .around-justified | %.around-justified，设置子元素在flexbox容器里与子元素堆叠方向同向上水平均匀摊开
 
-* .justified | %justified，设置子元素在flexbox容器里水平两端对齐，中间均匀摊开
+* .justified | %justified，设置子元素在flexbox容器里与子元素堆叠方向同向上两端对齐，中间均匀摊开
 
-* .selft-start | %self-start，设置元素自身flexbox容器里与堆叠方向垂直方向上靠上边缘
+* .selft-start | %self-start，设置单独一个子元素自身在flexbox容器里与堆叠方向垂直方向上向上或者向左靠近边缘
 
-* .selft-center | %self-center，设置元素自身flexbox容器里与堆叠方向垂直方向上居中
+* .selft-center | %self-center，设置单独一个子元素自身在flexbox容器里与堆叠方向垂直方向上居中
 
-* .selft-end | %self-end，设置元素自身flexbox容器里与堆叠方向垂直方向上靠近下边缘
+* .selft-end | %self-end，设置单独一个子元素自身在flexbox容器里与堆叠方向垂直方向上向右或者向下靠近边缘
 
-* .selft-strech | %self-end，设置元素自身flexbox容器里与堆叠方向垂直方向上伸展开靠近上下边缘
+* .selft-strech | %self-end，设置单独一个子元素自身flexbox容器里与堆叠方向垂直方向上伸展开靠近左右或者上下边缘
 
 * .wrap | %wrap， 可以设置容器内元素超过容器容纳范围时换行
 

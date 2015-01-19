@@ -1,41 +1,3 @@
-/* float clearfix */
-=clearfix
-  &:before,
-  &:after
-    content: " "
-    display: table
-  &:after
-    clear: both
-
-/* box-sizing setting */
-=box-sizing($boxsizing)
-  box-sizing: $boxsizing
-  -moz-box-sizing: $boxsizing
-
-/* border radius */
-=border-top-radius($radius)
-  border-top-right-radius: $radius
-  border-top-left-radius: $radius
-
-=border-right-radius($radius)
-  border-bottom-right-radius: $radius
-  border-top-right-radius: $radius
-
-=border-bottom-radius($radius)
-  border-bottom-right-radius: $radius
-  border-bottom-left-radius: $radius
-
-=border-left-radius($radius)
-  border-bottom-left-radius: $radius
-  border-top-left-radius: $radius
-
-/* text overflow ellipsis */
-=text-overflow
-  overflow: hidden
-  text-overflow: ellipsis
-  white-space: nowrap
-
-
 /* compatible transition when the transition-property is transform  */
 @function prefix($property, $prefixes: (webkit moz o ms))
   $vendor-prefixed-properties: transform background-clip background-size
@@ -70,9 +32,13 @@
 
 /* compatible transform  */
 =transform($values)
+  -ms-transform: $values
+  -moz-transform: $values
   -webkit-transform: $values
   transform: $values
 =transform-origin($values)
+  -ms-transform-origin: $values
+  -moz-transform-origin: $values
   -webkit-transform-origin: $values
   transform-origin: $values
 
@@ -84,7 +50,16 @@
   -webkit-animation-timing-function: $values
   animation-timing-function: $values
 =keyframes($name)
+  @-moz-keyframes #{$name}
+    @content
   @-webkit-keyframes #{$name}
     @content
   @keyframes #{$name}
     @content
+
+/* box-sizing setting */
+=box-sizing($boxsizing)
+  -moz-box-sizing: $boxsizing
+  -webkit-box-sizing: $boxsizing
+  box-sizing: $boxsizing
+

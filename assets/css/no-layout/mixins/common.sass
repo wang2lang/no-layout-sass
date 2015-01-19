@@ -1,0 +1,35 @@
+/* float clearfix */
+=clearfix
+  &:before,
+  &:after
+    content: " "
+    display: table
+  &:after
+    clear: both
+
+/* background color */
+=bg-variant($color)
+  background-color: $color
+  &:hover
+    background-color: darken($color, 10%)
+
+/* text overflow ellipsis */
+=text-overflow
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap
+
+/* border radius */
+=border-top-radius($radius)
+  border-top-right-radius: $radius
+  border-top-left-radius: $radius
+=border-right-radius($radius)
+  border-bottom-right-radius: $radius
+  border-top-right-radius: $radius
+=border-bottom-radius($radius)
+  border-bottom-right-radius: $radius
+  border-bottom-left-radius: $radius
+=border-left-radius($radius)
+  border-bottom-left-radius: $radius
+  border-top-left-radius: $radius
+

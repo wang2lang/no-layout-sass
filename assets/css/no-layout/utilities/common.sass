@@ -1,0 +1,80 @@
+/* utility class, one begin with % is for extending in your code */
+@import '../mixins/common.sass'
+@import '../mixins/flex.sass'
+@import '../mixins/css3.sass'
+
+/* clear float */
+.clearfix
+  +clearfix()
+
+%clearfix
+  +clearfix()
+
+/* set box sizing */
+.box-sizing-border
+  +box-sizing(border-box)
+
+.box-sizing-content
+  +box-sizing(content-box)
+
+%box-sizing-border
+  +box-sizing(border-box)
+
+%box-sizing-content
+  +box-sizing(content-box)
+
+
+/* float left or right */
+.pull-right
+  float: right!important
+
+.pull-left
+  float: left!important
+
+/* hide or show */
+.hide
+  display: none!important
+
+.show
+  display: block!important
+
+.invisible
+  visibility: hidden!important
+
+.visible
+  visibility: visible!important
+
+/* ul li reset */
+.ul-reset
+  margin:  0
+  padding: 0
+  list-style: none
+
+%ul-reset
+  margin:  0
+  padding: 0
+  list-style: none
+
+/* text overflow ellipsis */
+.text-overflow
+  +text-overflow
+
+%text-overflow
+  +text-overflow
+
+/* useful margin sizes */
+@for $i from 1 to 31
+  .mt-#{$i}
+    margin-top: #{$i}px!important
+
+@for $i from 1 to 31
+  .mr-#{$i}
+    margin-right: #{$i}px!important
+
+@for $i from 1 to 31
+  .mb-#{$i}
+    margin-bottom: #{$i}px!important
+
+@for $i from 1 to 31
+  .ml-#{$i}
+    margin-left: #{$i}px!important
