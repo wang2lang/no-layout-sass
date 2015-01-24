@@ -55,7 +55,7 @@
   padding: 0
   list-style: none
 
-/* drop back for modal or something like modal */
+/* dorp back for modal or something like modal */
 %drop-back
   position: fixed
   top: 0
@@ -72,18 +72,35 @@
   +text-overflow
 
 /* useful margin sizes */
-@for $i from 1 to 31
+@for $i from 0 to 31
   .mt-#{$i}
     margin-top: #{$i}px!important
 
-@for $i from 1 to 31
+@for $i from 0 to 31
   .mr-#{$i}
     margin-right: #{$i}px!important
 
-@for $i from 1 to 31
+@for $i from 0 to 31
   .mb-#{$i}
     margin-bottom: #{$i}px!important
 
-@for $i from 1 to 31
+@for $i from 0 to 31
   .ml-#{$i}
     margin-left: #{$i}px!important
+
+/* useful padding sizes */
+@for $i from 0 to 31
+  .pt-#{$i}
+    padding-top: #{$i}px!important
+
+@for $i from 0 to 31
+  .pr-#{$i}
+    padding-right: #{$i}px!important
+
+@for $i from 0 to 31
+  .pb-#{$i}
+    padding-bottom: #{$i}px!important
+
+@for $i from 0 to 31
+  .pl-#{$i}
+    padding-left: #{$i}px!important
