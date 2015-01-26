@@ -46,7 +46,6 @@
   -moz-transform-style: $value
   transform-style: $value
 
-
 /* compatible animation  */
 =animation($values)
   -webkit-animation: $values
@@ -69,20 +68,11 @@
   -webkit-box-sizing: $boxsizing
   box-sizing: $boxsizing
 
-
-/* user-select */
-=user-select($model: text)
-  -webkit-user-select: $mode
-  -moz-user-select: $mode
-  -ms-user-select: $mode
-  user-select: $mode
-
-/* x-radial-gradient */
-=radial-gradient($arguments...)
-  background: -webkit-radial-gradient($arguments)
-  background: -moz-radial-gradient($arguments)
-  background: -ms-radial-gradient($arguments)
-  background: radial-gradient($arguments)
+/* box shadow */
+=box-shadow($param)
+  -moz-box-shadow: $param
+  -webkit-box-shadow: $param
+  box-shadow: $param
 
 /* placeholder */
 =placeholder($color)
@@ -95,6 +85,27 @@
     color: $color
   &::-webkit-input-placeholder
     color: $color
+
+/* user-select */
+=user-select($model: text)
+  -webkit-user-select: $mode
+  -moz-user-select: $mode
+  -ms-user-select: $mode
+  user-select: $mode
+
+/* backface visibility */
+=backface-visibility($value:visible)
+  -webkit-backface-visibility: $value
+  -moz-backface-visibility: $value
+  -ms-backface-visibility: $value
+  backface-visibility: $value
+
+/* appearance  */
+=appearance($value)
+  -webkit-appearance: $value
+  -moz-appearance: $value
+  appearance: $value
+    +background-size($width_1x $height_1x)
 
 /* perspective */
 =perspective($value: none)
@@ -124,67 +135,11 @@
   /* for IE6~9 */
   filter: gray
 
-/* box shadow */
-=box-shadow($param)
-  -moz-box-shadow: $param
-  -webkit-box-shadow: $param
-  box-shadow: $param
-
-/* border triangle  */
-@mixin x-border-triangle($borderWidth, $borderColor, $direction)
-  $default-border-style: solid
-  width: 0
-  height: 0
-  overflow: hidden
-  border-width: $borderWidth
-  border-style: $default-border-style
-  _border-style: dashed
-  border-color: transparent
-  @if ($direction == top)
-    border-bottom-color: $borderColor
-    _border-bottom-style: $default-border-style
-  @if ($direction == right)
-    border-left-color: $borderColor
-    _border-left-style: $default-border-style
-  @if ($direction == bottom)
-    border-top-color: $borderColor
-    _border-top-style: $default-border-style
-  @if ($direction == left)
-    border-right-color: $borderColor
-    _border-right-style: $default-border-style
-  @if ($direction == topleft)
-    border-top-color: $borderColor
-    border-left-color: $borderColor
-    _border-top-style: $default-border-style
-    _border-left-style: $default-border-style
-  @if ($direction == topright)
-    border-top-color: $borderColor
-    border-right-color: $borderColor
-    _border-top-style: $default-border-style
-    _border-right-style: $default-border-style
-  @if ($direction == bottomleft)
-    border-bottom-color: $borderColor
-    border-left-color: $borderColor
-    _border-bottom-style: $default-border-style
-    _border-left-style: $default-border-style
-  @if ($direction == bottomright)
-    border-bottom-color: $borderColor
-    border-right-color: $borderColor
-    _border-bottom-style: $default-border-style
-    _border-right-style: $default-border-style
-
 /* background size  */
 =background-size($size)
   -webkit-background-size: $size
   -moz-background-size: $size
-  -o-background-size: $size
   background-size: $size
-
-/* background-retina */
-=background-retina($img_1x, $img_2x, $width_1x, $height_1x)
-  background-image: url($img_1x)
-  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi),only screen and (min-resolution: 2dppx)
-    background-image: url($img_2x)
 
 /* background-origin */
 =background-origin($mode: border-box)
@@ -212,19 +167,12 @@
   -webkit-background-clip: $xmode
   background-clip: $mode
 
-/* backface visibility */
-=backface-visibility($value:visible)
-  -webkit-backface-visibility: $value
-  -moz-backface-visibility: $value
-  -ms-backface-visibility: $value
-  backface-visibility: $value
-
-/* appearance  */
-=appearance($value)
-  -webkit-appearance: $value
-  -moz-appearance: $value
-  appearance: $value
-    +background-size($width_1x $height_1x)
+/* x-radial-gradient */
+=radial-gradient($arguments...)
+  background: -webkit-radial-gradient($arguments)
+  background: -moz-radial-gradient($arguments)
+  background: -ms-radial-gradient($arguments)
+  background: radial-gradient($arguments)
 
 /* linear-gradient */
 =linear-gradient($arguments...)
@@ -250,14 +198,6 @@
   @else if ($wkdirection == right)
     $startColor: nth(nth($arguments, 3), 1)
     $endColor: nth(nth($arguments, 2), 1)
-
   background: -webkit-linear-gradient($wkdirection, $colorlist)
   background: linear-gradient($arguments)
   filter: unquote("progid:DXImageTransform.Microsoft.gradient(startcolorstr=#{$startColor}, endcolorstr=#{$endColor},gradientType=#{$iedirection})")
-
-/* font face  */
-=font-face($fontName, $noSuffixFontUrl)
-  @font-face
-    font-family: "#{$fontName}"
-    src: url("#{$noSuffixFontUrl}.eot")
-    src: url("#{$noSuffixFontUrl}.eot?#iefix") format("embedded-opentype"), url("#{$noSuffixFontUrl}.woff") format("woff"), url("#{$noSuffixFontUrl}.ttf")  format("truetype"), url("#{$noSuffixFontUrl}.svg#svgFontName") format("svg")
