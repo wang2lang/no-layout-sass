@@ -1,6 +1,8 @@
 no-layout
 ==================
-  a SASS library for you to write CSS layout easily.
+  It is a Sass library for you to write CSS layout easily. It's not a library like Bootstrap or Foundation. It just helps you to write your css easily on a deeper level.
+  It is based on flexbox, go to http://www.w3.org/TR/css3-flexbox/ for reference.
+  You can also run examples in this project for study.
 
 ### use directory
 
@@ -67,9 +69,83 @@ no-layout
 
 * .selft-end | %self-end，设置单独一个子元素自身在flexbox容器里与堆叠方向垂直方向上向右或者向下靠近边缘
 
-* .selft-strech | %self-end，设置单独一个子元素自身flexbox容器里与堆叠方向垂直方向上伸展开靠近左右或者上下边缘
+* .self-stretch | %self-stretch，设置单独一个子元素自身flexbox容器里与堆叠方向垂直方向上伸展开靠近左右或者上下边缘
 
 * .wrap | %wrap， 可以设置容器内元素超过容器容纳范围时换行
+
+### some common mixins you can use in no-layout
+* 清除浮动： +clearfix (建议@extend %clearfix)
+
+* hover改变背景色的元素，比如button,tabs等，默认加深原始颜色百分之十： +bg-variant($color)
+
+* 文字超过容器长度时隐藏超出部分，并以省略号结尾：+text-overflow (建议@extend %text-overflow)
+* 修改边框圆角：+border-top-radius($value)，+border-right-radius($value) ，+border-bottom-radius($value)，+border-left-radius($value)
+
+* css实现三角：+border-triangle($borderWidth, $borderColor, $directive)
+
+* retina屏幕下背景图片兼容问题：+background-retina($img_1x, $img_2x, $width_1x, $height_2x)，$img_1x为普通屏幕下背景图片的url地址，$img_2x为retina屏幕下背景图片url地址
+
+* font-face兼容问题： +font-face($fontName, $noSuffixFontUrl)
+
+### some common utilities you can use in no-layout
+* 清除浮动  .clearfix   %clearfix
+
+* 设置盒子模型 .box-sizing-border，.box-sizing-content，%box-sizing-border，%box-sizing-content
+
+* 向左向右浮动 .pull-left，.pull-right
+
+* 显示或者隐藏（从DOM中清除）.hide， .show
+
+* 可见或不可见（依旧在DOM中占用空间） .visible， .invisible
+
+* 重置ul  .ul-reset，%ul-reset
+
+* 文字超过容器长度时隐藏超出部分，并以省略号结尾 .text-overflow，%text-overflow
+
+* 常用的外边距（已添加!important）上外边距：.mt0 ~ .mt30，右外边距：.mr0 ~ .mr30，下外边距：.mb0 ~ .mb30，左外边距：.ml0 ~ .ml30
+
+* 常用的内边距（已添加!important）上内边距：.pt0 ~ .pt30，右内边距：.pr0 ~ .pr30，下内边距：.pb0 ~ .pb30，左内边距：.pl0 ~ .pl30
+
+### css3 compatiable mixins you can use in no-layout
+* +transform($value)
+
+* +transform-origin($value)
+
+* +animation($value)
+
+* +animation-timing-function($value)
+
+* +keyframes($name)  //详细请见‘mixins/css3.sass’文件
+
+* +box-sizing($value) (建议使用@extend %box-sizing-border 或 %box-sizing-content)
+
+* +box-shadow($param)
+
+* +placeholder($color)
+
+* +user-select($model: text)
+
+* +backface-visibility($value: visible)
+
+* +appearance($value)
+
+* +perspective($value: none)
+
+* +perspective-origin($origin: 50% 50%)
+
+* +opacity($opacity)
+
+* +grayscale (建议@extend %grayscale)
+
+* +background-size($size)
+
+* +background-origin($model: border-box)
+
+* +background-clip($model: border-box)
+
+* +radial-gradient($arguments)
+
+* +linear-gradient($arguments)
 
 
 depen on
