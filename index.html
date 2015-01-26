@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui" />
-    <link rel="stylesheet" href="assets/css/main.css">
-    <title>auto begin</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui" />
+  <link rel="stylesheet" href="assets/css/main.css">
+  <title>auto begin</title>
 </head>
 <body>
   <h2>1. horizontal</h2>
@@ -16,20 +16,20 @@
   <h2>2. horizontal flex1</h2>
   <div class="horizontal demo-container">
     <div class="one">One</div>
-    <div class="flex-1 two">Two</div>
+    <div class="flex-1 two">Two flex-1</div>
     <div class="three">Three</div>
   </div>
   <h2>3. vertical flex1</h2>
   <div class="vertical demo-container" style="height: 200px">
     <div class="one">One</div>
-    <div class="flex-1 two">Two</div>
+    <div class="flex-1 two">Two flex-1</div>
     <div class="three">Three</div>
   </div>
   <h2>4. vertical flex3 flex2 flex1</h2>
   <div class="horizontal demo-container">
-    <div class="flex-3 one">One</div>
-    <div class="flex-2 two">Two</div>
-    <div class="flex-1 three">Three</div>
+    <div class="flex-3 one">One flex-3</div>
+    <div class="flex-2 two">Two flex-2</div>
+    <div class="flex-1 three">Three flex-1</div>
   </div>
   <h2>5. horizontal start</h2>
   <div class="horizontal start demo-container" style="height: 100px">
@@ -97,49 +97,61 @@
     <div class="two">Two</div>
     <div class="three">Three</div>
   </div>
-  <h2>16. vertical start-justified</h2>
+  <h2>16. horizontal justified (child self-start self-center self-end)</h2>
+  <div class="horizontal justified demo-container" style="height: 200px">
+    <div class="one self-start">One self-start</div>
+    <div class="two self-center">Two self-center</div>
+    <div class="three self-end">Three self-end</div>
+  </div>
+  <h2>17. vertical start-justified</h2>
   <div class="vertical start-justified demo-container" style="height:200px">
     <div class="one">One</div>
     <div class="two">Two</div>
     <div class="three">Three</div>
   </div>
-  <h2>17. vertical center-justified</h2>
+  <h2>18. vertical center-justified</h2>
   <div class="vertical center-justified demo-container" style="height: 200px">
     <div class="one">One</div>
     <div class="two">Two</div>
     <div class="three">Three</div>
   </div>
-  <h2>18. vertical end-justified</h2>
+  <h2>19. vertical end-justified</h2>
   <div class="vertical end-justified demo-container" style="height: 200px">
     <div class="one">One</div>
     <div class="two">Two</div>
     <div class="three">Three</div>
   </div>
-  <h2>19. vertical around-justified</h2>
+  <h2>20. vertical around-justified</h2>
   <div class="vertical around-justified demo-container" style="height: 200px">
     <div class="one">One</div>
     <div class="two">Two</div>
     <div class="three">Three</div>
   </div>
-  <h2>20. vertical justified</h2>
+  <h2>21. vertical justified</h2>
   <div class="vertical justified demo-container" style="height: 200px">
     <div class="one">One</div>
     <div class="two">Two</div>
     <div class="three">Three</div>
   </div>
-  <h2>21. horizontal wrap</h2>
+  <h2>22. vertical justified (child self-start self-center self-end)</h2>
+  <div class="vertical justified demo-container" style="height: 200px">
+    <div class="one self-start">One self-start</div>
+    <div class="two self-center">Two self-end</div>
+    <div class="three self-end">Three self-end</div>
+  </div>
+  <h2>23. horizontal wrap</h2>
   <div class="horizontal wrap demo-container" style="width: 150px;">
     <div class="one" style="100px">One</div>
     <div class="two" style="80px">Two</div>
     <div class="three" style="30px">Three</div>
   </div>
-  <h2>22. horizontal reverse</h2>
+  <h2>24. horizontal reverse</h2>
   <div class="horizontal reverse demo-container">
     <div class="one">One</div>
     <div class="two">Two</div>
     <div class="three">Three</div>
   </div>
-  <h2>23. @extend %horizontal, @extend %justified</h2>
+  <h2>25. @extend %horizontal, @extend %justified</h2>
   <ul class="nav">
     <li>nav1</li>
     <li>nav2</li>
