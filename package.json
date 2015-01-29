@@ -1,7 +1,7 @@
 {
-  "name": "auto-done-front-end",
-  "version": "0.0.1",
-  "description": "An environment in which every work runs automaticlly.",
+  "name": "no-layout.sass",
+  "version": "0.1.0",
+  "description": "A Sass library for you to write css layout easily",
   "devDependencies": {
     "gulp": "^3.8.8"
   },
