@@ -55,6 +55,27 @@
   padding: 0
   list-style: none
 
+/* text overflow ellipsis */
+.text-overflow
+  +text-overflow
+
+%text-overflow
+  +text-overflow
+
+/* text align */
+.text-align-center
+  text-align: center
+
+%text-align-center
+  text-align: center
+
+/* vertical align */
+.vertical-align-middle
+  vertical-align: middle
+
+%vertical-align-middle
+  vertical-align: middle
+
 /* dorp back for modal or something like modal */
 %drop-back
   position: fixed
@@ -63,13 +84,6 @@
   bottom: 0
   left: 0
   z-index: 9999
-
-/* text overflow ellipsis */
-.text-overflow
-  +text-overflow
-
-%text-overflow
-  +text-overflow
 
 /* grayscale */
 %grayscale

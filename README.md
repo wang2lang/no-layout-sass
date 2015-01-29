@@ -102,6 +102,10 @@ no-layout
 
 * 文字超过容器长度时隐藏超出部分，并以省略号结尾 .text-overflow，%text-overflow
 
+* 内容水平居中 .text-align-center，%text-align-center
+
+* 内容之间垂直居中 .vertical-align-middle，%vertical-align-middle
+
 * 常用的外边距（已添加!important）上外边距：.mt0 ~ .mt30，右外边距：.mr0 ~ .mr30，下外边距：.mb0 ~ .mb30，左外边距：.ml0 ~ .ml30
 
 * 常用的内边距（已添加!important）上内边距：.pt0 ~ .pt30，右内边距：.pr0 ~ .pr30，下内边距：.pb0 ~ .pb30，左内边距：.pl0 ~ .pl30
@@ -162,11 +166,12 @@ command
 
 compatible
 =================
-* IE9 +
+* IE10 +
 * Chrome 22+ (低版本可能需要将行内元素设置display:block)
 * Sarify 3.1+
 * IOS Sarify 3.2+
 * Android Browser 2.1+ (低版本可能需要将行内元素设置display:block)
+* Android Browser 2.0 ~ 4.2   谨慎使用+align-self($value) 和 +align-content(around-space)
 
 visit these websites for more infomation
 * http://no-layout.diandian.com/post/des

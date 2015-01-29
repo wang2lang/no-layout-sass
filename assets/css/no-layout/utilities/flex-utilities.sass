@@ -7,7 +7,7 @@
 /* set children items' percentage of the remainder */
 @for $i from 1 to 20
   .flex-#{$i}
-    +item-flex($i !important)
+    +item-flex($i)
 
 @for $i from 1 to 20
   %flex-#{$i}
@@ -43,13 +43,13 @@
  * center or end accros the main axis.
  */
 .start
-  +align-items(flex-start !important)
+  +align-items(flex-start)
 
 .center
-  +align-items(center !important)
+  +align-items(center)
 
 .end
-  +align-items(flex-end !important)
+  +align-items(flex-end)
 
 %start
   +align-items(flex-start)
@@ -62,19 +62,19 @@
 
 /* Justifying content */
 .start-justified
-  +justify-content(flex-start !important)
+  +justify-content(flex-start)
 
 .center-justified
-  +justify-content(center !important)
+  +justify-content(center)
 
 .end-justified
-  +justify-content(flex-end !important)
+  +justify-content(flex-end)
 
 .around-justified
-  +justify-content(space-around !important)
+  +justify-content(space-around)
 
 .justified
-  +justify-content(space-between !important)
+  +justify-content(space-between)
 
 %start-justified
   +justify-content(flex-start)
