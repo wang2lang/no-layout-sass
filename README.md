@@ -8,7 +8,7 @@ no-layout
 
   Please import no-layout.sass in your main sass file, just like:
 
-    @import 'assets/css/no-layout/no-layout.sass'
+    @import 'sass/no-layout.sass'
 
 ### flexbox Mixins
 
