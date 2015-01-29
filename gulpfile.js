@@ -15,7 +15,8 @@ var gulp       = require('gulp'),
 gulp.task('connect', function() {
   connect.server({
     port: config.port,
-    livereload: true
+    livereload: true,
+    root: 'example'
   });
 });
 
@@ -52,7 +53,7 @@ gulp.task('open', function() {
   var option = {
     url: 'http://localhost:' + config.port
   };
-  gulp.src('index.html')
+  gulp.src('example/index.html')
   .pipe(open('', option));
 });
 
