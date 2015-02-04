@@ -8,9 +8,12 @@ no-layout.sass
 
   You can feel fress to use this library in your mobile web development. Run examples in this project to see how to use it.
 
-### use directory
+### install and use
+  First install no-layout.sass
 
-  Please import no-layout.sass in your main sass file, just like:
+    npm install no-layout.sass
+
+  Then you can import no-layout.sass in your main sass file, just like:
 
     @import 'sass/no-layout.sass'
 
