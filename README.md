@@ -24,13 +24,13 @@ no-layout.sass
 
 * display: flex, +flex  //defines a flex container, it is a block element itself and enables a flex context for all its direct children.
 
-* display: flex, +flex  //defines a flex container, it is a inline element itself and enables a flex context for all its direct children.
+* display: inline-flex, +inline-flex  //defines a flex container, it is a inline element itself and enables a flex context for all its direct children.
 
 * flex-direction: value,  +flex-direction(row | row-reverse | column | column-reverse)  //This establishes the main-axis, thus defining the direction which flex items are placed in the flex container. Flexbox is (aside from optional wrapping) a single-direction layout concept. Think of flex items as primarily laying out either in horizontal rows or vertical columns.
 
 * flex-wrap: value, +flex-wrap(nowrap | wrap | wrap-reverse)  //By default, flex items will all try to fit onto one line. You can change that and allow the items to wrap as needed with this property. Direction also plays a role here, determining the direction new lines are stacked in.
 
-* flex-flow: value, +flex-flow(<flex-direction> || <flex-wrap>) //This is a shorthand flex-direction and flex-wrap properties, which together define the flex container's main and cross axes. Default is row nowrap.
+* flex-flow: value, +flex-flow(flex-direction || flex-wrap) //This is a shorthand flex-direction and flex-wrap properties, which together define the flex container's main and cross axes. Default is row nowrap.
 
 * justify-content: value, +justify-content(flex-start | flex-end | center | space-between | space-arround)  //This defines the alignment along the main axis. It helps distribute extra free space left over when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over the alignment of items when they overflow the line.
 
@@ -46,11 +46,11 @@ no-layout.sass
 
 * flex: value , +item-flex(num)  //This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.
 
-* flex-grow: <number>  //default 0, This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.
+* flex-grow: number  //default 0, This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.
 
-* flex-shrink: <number>  //default 1, This defines the ability for a flex item to shrink if necessary.
+* flex-shrink: number  //default 1, This defines the ability for a flex item to shrink if necessary.
 
-* flex-basis: <length> | auto  //default auto, This defines the default size of an element before the remaining space is distributed. The main-size value makes it match the width or height, depending on which is relevant based on the flex-direction.
+* flex-basis: length | auto  //default auto, This defines the default size of an element before the remaining space is distributed. The main-size value makes it match the width or height, depending on which is relevant based on the flex-direction.
 
 ### flexbox utilities
   Some semantic capsulations help write layout easily. They are classes(.) or Sass placeholders(%) for extending. I suggest you to use @extend %XXX properly for maximizing your code reuse.
