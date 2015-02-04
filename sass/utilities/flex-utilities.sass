@@ -4,21 +4,18 @@
 
 @import '../mixins/flex.sass'
 
-/* set children items' percentage of the remainder */
-@for $i from 1 to 20
-  .flex-#{$i}
-    +item-flex($i)
-
-@for $i from 1 to 20
-  %flex-#{$i}
-    +item-flex($i)
-
 /* ennable container to be a flex container */
 .flex
   +flex
 
 %flex
   +flex
+
+.inline-flex
+  +inline-flex
+
+%inline-flex
+  +inline-flex
 
 /* ennable container to be a flex container and make items in the container layout horizontal */
 .horizontal
@@ -40,13 +37,16 @@
 
 /*
  * By default, children stretch to fit the cross-axis, bellow class will enable them to start,
- * center or end accros the main axis.
+ * center, baseline or end accros the main axis.
  */
 .start
   +align-items(flex-start)
 
 .center
   +align-items(center)
+
+.baseline
+  +align-items(baseline)
 
 .end
   +align-items(flex-end)
@@ -57,67 +57,36 @@
 %center
   +align-items(center)
 
+%baseline
+  +align-items(baseline)
+
 %end
   +align-items(flex-end)
 
 /* Justifying content */
-.start-justified
-  +justify-content(flex-start)
-
-.center-justified
+.center-justify
   +justify-content(center)
 
-.end-justified
+.end-justify
   +justify-content(flex-end)
 
-.around-justified
+.around-justify
   +justify-content(space-around)
 
-.justified
+.justify
   +justify-content(space-between)
 
-%start-justified
-  +justify-content(flex-start)
-
-%center-justified
+%center-justify
   +justify-content(center)
 
-%end-justified
+%end-justify
   +justify-content(flex-end)
 
-%around-justified
+%around-justify
   +justify-content(space-around)
 
-%justified
+%justify
   +justify-content(space-between)
-
-%inline-flex
-  +inline-flex
-
-/* self-align */
-.self-start
-  +align-self(flex-start)
-
-.self-center
-  +align-self(center)
-
-.self-end
-  +align-self(flex-end)
-
-.self-stretch
-  +align-self(stretch)
-
-%self-start
-  +align-self(flex-start)
-
-%self-center
-  +align-self(center)
-
-%self-end
-  +align-self(flex-end)
-
-%self-stretch
-  +align-self(stretch)
 
 /* enable wrapped layouts */
 .wrap
@@ -131,4 +100,32 @@
 
 %reverse
   +flex-direction(row-reverse)
+
+/* set children items' percentage of the remainder */
+@for $i from 1 to 20
+  .flex-#{$i}
+    +item-flex($i)
+
+@for $i from 1 to 20
+  %flex-#{$i}
+    +item-flex($i)
+
+/* self-align */
+.self-start
+  +align-self(flex-start)
+
+.self-center
+  +align-self(center)
+
+.self-end
+  +align-self(flex-end)
+
+%self-start
+  +align-self(flex-start)
+
+%self-center
+  +align-self(center)
+
+%self-end
+  +align-self(flex-end)
 
