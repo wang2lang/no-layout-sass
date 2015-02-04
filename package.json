@@ -2,6 +2,8 @@
   "name": "no-layout.sass",
   "version": "0.1.0",
   "description": "A Sass library for you to write css layout easily",
+  "author": "Wang Chaonan",
+  "license": "MIT",
   "devDependencies": {
     "gulp": "^3.8.8",
     "gulp-connect": "^2.0.6",
