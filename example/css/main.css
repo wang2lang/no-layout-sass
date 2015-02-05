@@ -1443,6 +1443,160 @@ body {
  * flex-basis: <length> | auto // default auto
  * flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
  */
+/* ennable container to be a flex container as well as a block container */
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+
+/* ennable container to be a flex container as well as a inline-block container */
+.inline-flex {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex; }
+
+/* ennable container to be a flex container as well as block element and make items in the container layout horizontal */
+.horizontal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -ms-flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-direction: row; }
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -ms-flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-direction: row; }
+
+/* ennable container to be a flex container as well as inline-block element and make items in the container layout horizontal */
+.inline-horizontal {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -ms-flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-direction: row; }
+
+/* ennable container to be a flex container as well as block element and make items in the container layout vertical */
+.vertical {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column; }
+
+/* ennable container to be a flex container as well as inline-block element and make items in the container layout vertical */
+.inline-vertical {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column; }
+
+/*
+ * By default, children stretch to fit the cross-axis, bellow class will enable them to start,
+ * center, baseline or end accros the main axis.
+ */
+.start {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  align-items: flex-start; }
+
+.center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center; }
+
+.baseline {
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  -webkit-align-items: baseline;
+  -moz-align-items: baseline;
+  align-items: baseline; }
+
+.end {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  -webkit-align-items: flex-end;
+  -moz-align-items: flex-end;
+  align-items: flex-end; }
+
+/* Justifying content */
+.center-justify {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center; }
+
+.end-justify {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  justify-content: flex-end; }
+
+.around-justify {
+  -ms-flex-pack: distribute;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  justify-content: space-around; }
+
+.justify {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between; }
+
+.nav {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between; }
+
+/* enable wrapped layouts */
+.wrap {
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+/* mirror layout direction */
+.reverse {
+  -webkit-box-direction: reverse;
+  -webkit-box-orient: horizontal;
+  -ms-flex-direction: row-reverse;
+  -webkit-flex-direction: row-reverse;
+  flex-direction: row-reverse; }
+
 /* set children items' percentage of the remainder */
 .flex-1 {
   -webkit-box-flex: 1;
@@ -1558,115 +1712,6 @@ body {
   -webkit-flex: 19;
   flex: 19; }
 
-/* ennable container to be a flex container */
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex; }
-
-/* ennable container to be a flex container and make items in the container layout horizontal */
-.horizontal {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: horizontal;
-  -ms-flex-direction: row;
-  -webkit-flex-direction: row;
-  flex-direction: row; }
-
-.nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: horizontal;
-  -ms-flex-direction: row;
-  -webkit-flex-direction: row;
-  flex-direction: row; }
-
-/* ennable container to be a flex container and make items in the container layout vertical */
-.vertical {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -ms-flex-direction: column;
-  -webkit-flex-direction: column;
-  flex-direction: column; }
-
-/*
- * By default, children stretch to fit the cross-axis, bellow class will enable them to start,
- * center or end accros the main axis.
- */
-.start {
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  -webkit-align-items: flex-start;
-  -moz-align-items: flex-start;
-  align-items: flex-start; }
-
-.center {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  align-items: center; }
-
-.end {
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  -webkit-align-items: flex-end;
-  -moz-align-items: flex-end;
-  align-items: flex-end; }
-
-/* Justifying content */
-.start-justified {
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  -webkit-justify-content: flex-start;
-  -moz-justify-content: flex-start;
-  justify-content: flex-start; }
-
-.center-justified {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  justify-content: center; }
-
-.end-justified {
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  -webkit-justify-content: flex-end;
-  -moz-justify-content: flex-end;
-  justify-content: flex-end; }
-
-.around-justified {
-  -ms-flex-pack: distribute;
-  -webkit-justify-content: space-around;
-  -moz-justify-content: space-around;
-  justify-content: space-around; }
-
-.justified {
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  -webkit-justify-content: space-between;
-  -moz-justify-content: space-between;
-  justify-content: space-between; }
-
-.nav {
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  -webkit-justify-content: space-between;
-  -moz-justify-content: space-between;
-  justify-content: space-between; }
-
 /* self-align */
 .self-start {
   -webkit-align-self: flex-start;
@@ -1686,26 +1731,6 @@ body {
   -ms-flex-item-align: end;
   align-self: flex-end; }
 
-.self-stretch {
-  -webkit-align-self: stretch;
-  -moz-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch; }
-
-/* enable wrapped layouts */
-.wrap {
-  -ms-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap; }
-
-/* mirror layout direction */
-.reverse {
-  -webkit-box-direction: reverse;
-  -webkit-box-orient: horizontal;
-  -ms-flex-direction: row-reverse;
-  -webkit-flex-direction: row-reverse;
-  flex-direction: row-reverse; }
-
 body {
   padding: 36px; }
 
@@ -1714,10 +1739,21 @@ body {
   padding: 10px 15px;
   background-color: #ccc; }
 
+.height-200 {
+  height: 200px; }
+
 .one, .two, .three {
   margin: 5px 10px;
-  padding: 5px 10px;
   background-color: #fff; }
+
+.one {
+  padding: 5px; }
+
+.two {
+  padding: 10px; }
+
+.three {
+  padding: 15px; }
 
 .nav {
   margin: 0;

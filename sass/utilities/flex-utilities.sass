@@ -4,20 +4,21 @@
 
 @import '../mixins/flex.sass'
 
-/* ennable container to be a flex container */
+/* ennable container to be a flex container as well as a block container */
 .flex
   +flex
 
 %flex
   +flex
 
+/* ennable container to be a flex container as well as a inline-block container */
 .inline-flex
   +inline-flex
 
 %inline-flex
   +inline-flex
 
-/* ennable container to be a flex container and make items in the container layout horizontal */
+/* ennable container to be a flex container as well as block element and make items in the container layout horizontal */
 .horizontal
   +flex
   +flex-direction(row)
@@ -26,13 +27,31 @@
   +flex
   +flex-direction(row)
 
-/* ennable container to be a flex container and make items in the container layout vertical */
+/* ennable container to be a flex container as well as inline-block element and make items in the container layout horizontal */
+.inline-horizontal
+  +inline-flex
+  +flex-direction(row)
+
+%inline-horizontal
+  +inline-flex
+  +flex-direction(row)
+
+/* ennable container to be a flex container as well as block element and make items in the container layout vertical */
 .vertical
   +flex
   +flex-direction(column)
 
 %vertical
   +flex
+  +flex-direction(column)
+
+/* ennable container to be a flex container as well as inline-block element and make items in the container layout vertical */
+.inline-vertical
+  +inline-flex
+  +flex-direction(column)
+
+%inline-vertical
+  +inline-flex
   +flex-direction(column)
 
 /*

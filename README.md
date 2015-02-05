@@ -58,11 +58,15 @@ no-layout.sass
 #### for the Parent (flex container)
 * .flex | %flex  //defines a block flex container
 
-* .inline-flex | %inline-flex  //defines a inline flex container
+* .inline-flex | %inline-flex  //defines a inline-block flex container
 
 * .horizontal | %horizontal  /defines a block flex container and flex items are placed from left to right (flex items are laid out along on the current line and are packed toward to the start of the current line by default)
 
+* .inline-horizontal | %inline-horizontal  /defines a inline-block flex container and flex items are placed from left to right (flex items are laid out along on the current line and are packed toward to the start of the current line by default)
+
 * .vertical | %vertical  //defines a block flex container and flex items are placed from top to bottom (flex items are laid out along the cross axis on the current line and are stretch to fill the container)
+
+* .inline-vertical | %inline-vertical  //defines a inline-block flex container and flex items are placed from top to bottom (flex items are laid out along the cross axis on the current line and are stretch to fill the container)
 
 * .reverse | %reverse //mirror layout direction
 

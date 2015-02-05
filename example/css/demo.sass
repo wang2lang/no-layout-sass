@@ -6,17 +6,26 @@ body
   padding: 10px 15px
   background-color: #ccc
 
+.height-200
+  height: 200px
+
 .one,
 .two,
 .three
   margin: 5px 10px
-  padding: 5px 10px
   background-color: #fff
+
+.one
+  padding: 5px
+.two
+  padding: 10px
+.three
+  padding: 15px
 
 
 .nav
   @extend %horizontal
-  @extend %justified
+  @extend %justify
   margin: 0
   padding: 3px 25px
   background-color: #ccc
