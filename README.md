@@ -100,15 +100,23 @@ no-layout.sass
 ### some common mixins you can use in no-layout
 * +clearfix (@extend %clearfix is better)
 
+* +abs-pos($top, $right, $bottom, $left) //absolute position
+
 * +bg-variant($color) //hover background variant (darken 10%)
 
-* +text-overflow (@extend %text-overflow is better)  //overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+* +text-truncate (@extend %text-truncate is better)  //overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 
 * +border-top-radius($value), +border-right-radius($value), +border-bottom-radius($value), +border-left-radius($value)
 
 * +border-triangle($borderWidth, $borderColor, $directive)
 
-* +background-retina($img_1x, $img_2x, $width_1x, $height_2x) //compatible retina screen and normal screen
+* +device-retina //classes work for retina device (@media)
+
+* +device-normal //classes work for normal device (@media)
+
+* +retina-border-1px($color, $direction) //get 1px 'border' for retina device (only one border)
+
+* +device-border-none //hide boder created by +retina-border-1px
 
 * +font-face($fontName, $noSuffixFontUrl) //compatible font-face
 
@@ -125,11 +133,13 @@ no-layout.sass
 
 * .ul-reset | %ul-reset  //margin: 0; padding: 0; list-style: none
 
-* .text-overflow | %text-overflow
+* .text-truncate | %text-truncate
 
-* .text-align-center | %text-align-center
+* .text-align-center, .text-align-right, .text-align-left
 
-* .vertical-align-middle | %vertical-align-middle
+* .vertical-align-middle
+
+* %drop-back //drop back for modals or something like modal
 
 * .mt0 ~ .mt30, .mr0 ~ .mr30, .mb0 ~ .mb30, .ml0 ~ .ml30  //the most frequently used margin (with !important)
 
@@ -156,15 +166,11 @@ no-layout.sass
 
 * +backface-visibility($value: visible)
 
-* +appearance($value)
-
 * +perspective($value: none)
 
 * +perspective-origin($origin: 50% 50%)
 
 * +opacity($opacity)
-
-* +grayscale (@extend %grayscale is better)
 
 * +background-size($size)
 
