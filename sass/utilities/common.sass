@@ -1,95 +1,23 @@
-/* utility class, one begin with % is for extending in your code */
+
+/**
+ * Common Utilities
+ *
+ * This is a set of classes or placeholters that will be used frequently, items which begin with %
+ * are for extending (@extend %item) in your sass code, these code could help you reuse codes to to the extreme.
+ *
+ * Note: items begin width % is for extending in your code
+ */
+
+
+
+
+// import mixins they need
 @import '../mixins/common.sass'
 @import '../mixins/flex.sass'
 @import '../mixins/css3.sass'
 
-/* clear float */
-.clearfix
-  +clearfix()
 
-%clearfix
-  +clearfix()
-
-/* set box sizing */
-.box-sizing-border
-  +box-sizing(border-box)
-
-.box-sizing-content
-  +box-sizing(content-box)
-
-%box-sizing-border
-  +box-sizing(border-box)
-
-%box-sizing-content
-  +box-sizing(content-box)
-
-
-/* float left or right */
-.pull-right
-  float: right!important
-
-.pull-left
-  float: left!important
-
-/* hide or show */
-.hide
-  display: none!important
-
-.show
-  display: block!important
-
-.invisible
-  visibility: hidden!important
-
-.visible
-  visibility: visible!important
-
-/* ul li reset */
-.ul-reset
-  margin:  0
-  padding: 0
-  list-style: none
-
-%ul-reset
-  margin:  0
-  padding: 0
-  list-style: none
-
-/* text overflow ellipsis */
-.text-overflow
-  +text-overflow
-
-%text-overflow
-  +text-overflow
-
-/* text align */
-.text-align-center
-  text-align: center
-
-%text-align-center
-  text-align: center
-
-/* vertical align */
-.vertical-align-middle
-  vertical-align: middle
-
-%vertical-align-middle
-  vertical-align: middle
-
-/* dorp back for modal or something like modal */
-%drop-back
-  position: fixed
-  top: 0
-  right: 0
-  bottom: 0
-  left: 0
-  z-index: 9999
-
-/* grayscale */
-%grayscale
-  +grayscale
-
-/* useful margin sizes */
+// useful margin sizes (from 0 to 30)
 @for $i from 0 to 31
   .mt#{$i}
     margin-top: #{$i}px!important
@@ -106,7 +34,8 @@
   .ml#{$i}
     margin-left: #{$i}px!important
 
-/* useful padding sizes */
+
+// useful paadding sizes (from 0 to 30)
 @for $i from 0 to 31
   .pt#{$i}
     padding-top: #{$i}px!important
@@ -122,3 +51,93 @@
 @for $i from 0 to 31
   .pl#{$i}
     padding-left: #{$i}px!important
+
+
+// clear float
+.clearfix
+  +clearfix()
+
+%clearfix
+  +clearfix()
+
+
+// set box sizing
+.box-sizing-border
+  +box-sizing(border-box)
+
+.box-sizing-content
+  +box-sizing(content-box)
+
+%box-sizing-border
+  +box-sizing(border-box)
+
+%box-sizing-content
+  +box-sizing(content-box)
+
+
+// float left or right
+.pull-right
+  float: right!important
+
+.pull-left
+  float: left!important
+
+
+// hide or show
+.hide
+  display: none!important
+
+.show
+  display: block!important
+
+.invisible
+  visibility: hidden!important
+
+.visible
+  visibility: visible!important
+
+
+// ul li reset
+.ul-reset
+  margin:  0
+  padding: 0
+  list-style: none
+
+%ul-reset
+  margin:  0
+  padding: 0
+  list-style: none
+
+
+// text overflow ellipsis
+.text-overflow
+  +text-truncate
+
+%text-overflow
+  +text-truncate
+
+
+// text align
+.text-align-left
+  text-align: left
+
+.text-align-center
+  text-align: center
+
+.text-align-right
+  text-align: right
+
+
+// vertical align middle
+.vertical-align-middle
+  vertical-align: middle
+
+
+// drop back for modals or something like modal
+%drop-back
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  z-index: 9999

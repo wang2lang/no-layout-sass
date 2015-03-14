@@ -1,88 +1,53 @@
-/*
- * FLEX MIXINS
+/**
+ * Flex Mixins
  *
- * NOTE: ! for reason to adapt the prefix
+ * This is a set of mixins for those who want to mess around with flexbox
+ * using the native support of current browsers. For full support table
+ * check: http://caniuse.com/flexbox
  *
+ * 1. Flex Container Properties
+ * 2. Flex Item Properties
  *
- * Old Syntax / 2009 Syntax / Box Syntax / WD
- * http://www.w3.org/TR/2009/WD-css3-flexbox-20090723/
- *
- *   -webkit
- *     Chrome 4-20
- *     Safari 3.1-6.0
- *   ! iOS Safari 3.2-6.1
- *   ! Android Browser 2.1-4.3
- *     Opera 12.1
- *   -moz
- *     Firefox 2-21
- *
- *
- * MS Syntax / 2012 Syntax / Flexbox Syntax / WD
- * http://www.w3.org/TR/2012/WD-css3-flexbox-20120322/
- *
- *   -ms
- *   ! IE 10 Desktop & Mobile
- *
- *
- * New Syntax / 2014 Syntax / Flex Syntax / CR
- * http://www.w3.org/TR/css3-flexbox/
- *
- *   -webkit
- *     Chrome 21-27
- *   ! Safari 6.1+
- *   ! iOS Safari 7+
- *   ! Android Browser 4.4+
- *     Opera 15-16
- *   N/A
- *     Chrome 28+
- *     Firefox 22+
- *     Android Firefox 29+
- *     Opera 17+
- *     IE 10+
  */
 
+
+
+
 /*
- * FUNCTIONS
+ * Functions
  */
 
+//maps for special value
 $flex-value-map: (auto: auto, nowrap: none, wrap: wrap, wrap-reverse: wrap-reverse, flex-start: start, flex-end: end, center: center, space-between: justify, space-arround: distribute, baseline: baseline, stretch: stretch)
 
 @function getValue($value)
   @return map-get($flex-value-map, $value)
 
+
+
+
 /*
  * Flex Container Properties
  */
 
-/*
- * display: flex
- */
+// display: flex
 =flex
-  // old syntax
   display: -webkit-box
-  // ms syntax
   display: -ms-flexbox
-  // new syntax
   display: -webkit-flex
   display: flex
 
-/*
- * display: inline-flex
- */
+
+// display: inline-flex
 =inline-flex
-  // old syntax
   display: -webkit-inline-box
-  // ms syntax
   display: -ms-inline-flexbox
-  // new syntax
   display: -webkit-inline-flex
   display: inline-flex
 
-/*
- * flex-direction: row | row-reverse | column | column-reverse
- */
+
+// flex-direction: row | row-reverse | column | column-reverse
 =flex-direction($value)
-  // old syntax: combined by box-orient and box-direction
   @if $value == row
     -webkit-box-direction: normal
     -webkit-box-orient: horizontal
@@ -95,41 +60,32 @@ $flex-value-map: (auto: auto, nowrap: none, wrap: wrap, wrap-reverse: wrap-rever
   @else if $value == column-reverse
     -webkit-box-direction: reverse
     -webkit-box-orient: vertical
-  // ms syntax
   -ms-flex-direction: $value
-  // new syntax
   -webkit-flex-direction: $value
   flex-direction: $value
 
-/*
- * flex-wrap: nowrap | wrap | wrap-reverse
- */
+
+// flex-wrap: nowrap | wrap | wrap-reverse
 =flex-wrap($value)
   // old syntax: not supported
-  // ms syntax
   -ms-flex-wrap: getValue($value)
-  // new syntax
   -webkit-flex-wrap: $value
   flex-wrap: $value
 
-/*
- * flex-flow: <‘flex-direction’> || <‘flex-wrap’>
- */
+
+// flex-flow: <‘flex-direction’> || <‘flex-wrap’>
 =flex-flow($direction, $wrap)
   // old syntax: not supported
   -webkit-flex-direction: $direction
   -webkit-flex-wrap: $wrap
-  // ms syntax
   -ms-flex-direction: $direction
   -ms-flex-wrap: getValue($value)
-  // new syntax
   -webkit-flex-flow: $direction $wrap
   -ms-flex-flow: $direction $wrap
   flex-flow: $direction $wrap
 
-/*
- * justify-content: flex-start | flex-end | center | space-between | space-arround
- */
+
+// justify-content: flex-start | flex-end | center | space-between | space-arround
 =justify-content($value: flex-start)
   @if $value == flex-start
     -webkit-box-pack: start
@@ -149,10 +105,8 @@ $flex-value-map: (auto: auto, nowrap: none, wrap: wrap, wrap-reverse: wrap-rever
   -moz-justify-content: $value
   justify-content: $value
 
-/*
- * align-items: flex-start | flex-end | center | baseline | stretch
- */
 
+// align-items: flex-start | flex-end | center | baseline | stretch
 =align-items($value: stretch)
   @if $value == flex-start
     -webkit-box-align: start
@@ -167,38 +121,32 @@ $flex-value-map: (auto: auto, nowrap: none, wrap: wrap, wrap-reverse: wrap-rever
   -moz-align-items: $value
   align-items: $value
 
-/*
- * align-content: flex-start | flex-end | center | space-between | space-around | stretch
- */
+
+// align-content: flex-start | flex-end | center | space-between | space-around | stretch
 =align-content($value...)
   // old syntax: not supported
-  // ms syntax
   -ms-flex-line-pack: getValue($value)
-  // new syntax
   -webkit-align-content: $value
   align-content: $value
+
+
 
 
 /*
  * Flex Item Properties
  */
 
-/*
- * order: <integer>
- */
+// order: <integer>
 =order($value)
   // old syntax: $value must >= 0
   @if $value >= 0
     -webkit-box-original-group: $value + 1
-  // ms syntax
   -ms-flex-order: $value
-  // new syntax
   -webkit-order: $value
   order: $value
 
-/*
- * align-self: auto | flex-start | flex-end | center | baseline | stretch
- */
+
+// align-self: auto | flex-start | flex-end | center | baseline | stretch
 =align-self($value: auto)
   // No Webkit Box Fallback.
   -webkit-align-self: $value
@@ -211,17 +159,13 @@ $flex-value-map: (auto: auto, nowrap: none, wrap: wrap, wrap-reverse: wrap-rever
     -ms-flex-item-align: $value
   align-self: $value
 
-/*
- * flex-grow: <number> // default 0
- * flex-shrink: <number> // default 1
- * flex-basis: <length> | auto // default auto
+
+/**
+ * flex-grow: <number> (default 0), flex-shrink: <number> (default 1), flex-basis: <length> | auto (default auto)
  * flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
  */
 =item-flex($value)
-  // old syntax
   -webkit-box-flex: $value
-  // ms syntax
   -ms-flex: $value
-  // new syntax
   -webkit-flex: $value
   flex: $value

@@ -324,290 +324,166 @@ body {
   font-family: 'Microsoft YaHei', 'Helvetica Neue', Arial, 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif;
   font-size: 14px; }
 
-/* float clearfix */
-/* background color */
-/* text overflow ellipsis */
-/* border radius */
-/* border triangle  */
-/* background-retina */
-/* font face  */
-/* compatible transition when the transition-property is transform  */
-/* compatible transform  */
-/* compatible animation  */
-/* box-sizing setting */
-/* box shadow */
-/* placeholder */
-/* user-select */
-/* backface visibility */
-/* appearance  */
-/* perspective */
-/* opactity */
-/* grayscale */
-/* background size  */
-/* background-origin */
-/* background clip  */
-/* x-radial-gradient */
-/* linear-gradient */
-/*
- * FLEX MIXINS
+/**
+ * CSS3 Mixins
  *
- * NOTE: ! for reason to adapt the prefix
+ * This is a set of mixins which helps CSSers adapt some CSS3 prefix
+ * and use the native support of current browsers.
  *
+ * 1. Box-model, Visual
+ * 2. transform, transition ,animtaion and perspective
  *
- * Old Syntax / 2009 Syntax / Box Syntax / WD
- * http://www.w3.org/TR/2009/WD-css3-flexbox-20090723/
+ * Note: Consult flex.sass for flexbox's mixins
  *
- *   -webkit
- *     Chrome 4-20
- *     Safari 3.1-6.0
- *   ! iOS Safari 3.2-6.1
- *   ! Android Browser 2.1-4.3
- *     Opera 12.1
- *   -moz
- *     Firefox 2-21
+ */
+/**
+ * Box-model and Visual
+ */
+/**
+ * tranform, transition, animation and perspective
+ */
+/**
+ * Common Mixins
  *
+ * This is a set of useful mixins which will be used frequently.
  *
- * MS Syntax / 2012 Syntax / Flexbox Syntax / WD
- * http://www.w3.org/TR/2012/WD-css3-flexbox-20120322/
+ * 1. float clearfix
+ * 2. position absolute
+ * 3. background color variant for buttons or something like them
+ * 4. border radius
+ * 5. border triangle which is produced by pure CSS
+ * 6. breakpoint for responsible pages
+ * 7. do something on retina device or normal device (@media)
+ * 8. text overflow ellipsis
+ * 9. font face
  *
- *   -ms
- *   ! IE 10 Desktop & Mobile
+ */
+/**
+ * CSS3 Mixins
  *
+ * This is a set of mixins which helps CSSers adapt some CSS3 prefix
+ * and use the native support of current browsers.
  *
- * New Syntax / 2014 Syntax / Flex Syntax / CR
- * http://www.w3.org/TR/css3-flexbox/
+ * 1. Box-model, Visual
+ * 2. transform, transition ,animtaion and perspective
  *
- *   -webkit
- *     Chrome 21-27
- *   ! Safari 6.1+
- *   ! iOS Safari 7+
- *   ! Android Browser 4.4+
- *     Opera 15-16
- *   N/A
- *     Chrome 28+
- *     Firefox 22+
- *     Android Firefox 29+
- *     Opera 17+
- *     IE 10+
+ * Note: Consult flex.sass for flexbox's mixins
+ *
+ */
+/**
+ * Box-model and Visual
+ */
+/**
+ * tranform, transition, animation and perspective
+ */
+/**
+ * Flex Mixins
+ *
+ * This is a set of mixins for those who want to mess around with flexbox
+ * using the native support of current browsers. For full support table
+ * check: http://caniuse.com/flexbox
+ *
+ * 1. Flex Container Properties
+ * 2. Flex Item Properties
+ *
  */
 /*
- * FUNCTIONS
+ * Functions
  */
 /*
  * Flex Container Properties
  */
 /*
- * display: flex
- */
-/*
- * display: inline-flex
- */
-/*
- * flex-direction: row | row-reverse | column | column-reverse
- */
-/*
- * flex-wrap: nowrap | wrap | wrap-reverse
- */
-/*
- * flex-flow: <‘flex-direction’> || <‘flex-wrap’>
- */
-/*
- * justify-content: flex-start | flex-end | center | space-between | space-arround
- */
-/*
- * align-items: flex-start | flex-end | center | baseline | stretch
- */
-/*
- * align-content: flex-start | flex-end | center | space-between | space-around | stretch
- */
-/*
  * Flex Item Properties
  */
-/*
- * order: <integer>
- */
-/*
- * align-self: auto | flex-start | flex-end | center | baseline | stretch
- */
-/*
- * flex-grow: <number> // default 0
- * flex-shrink: <number> // default 1
- * flex-basis: <length> | auto // default auto
+/**
+ * flex-grow: <number> (default 0), flex-shrink: <number> (default 1), flex-basis: <length> | auto (default auto)
  * flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
  */
-/* utility class, one begin with % is for extending in your code */
-/* float clearfix */
-/* background color */
-/* text overflow ellipsis */
-/* border radius */
-/* border triangle  */
-/* background-retina */
-/* font face  */
-/*
- * FLEX MIXINS
+/**
+ * Common Utilities
  *
- * NOTE: ! for reason to adapt the prefix
+ * This is a set of classes or placeholters that will be used frequently, items which begin with %
+ * are for extending (@extend %item) in your sass code, these code could help you reuse codes to to the extreme.
  *
+ * Note: items begin width % is for extending in your code
+ */
+/**
+ * Common Mixins
  *
- * Old Syntax / 2009 Syntax / Box Syntax / WD
- * http://www.w3.org/TR/2009/WD-css3-flexbox-20090723/
+ * This is a set of useful mixins which will be used frequently.
  *
- *   -webkit
- *     Chrome 4-20
- *     Safari 3.1-6.0
- *   ! iOS Safari 3.2-6.1
- *   ! Android Browser 2.1-4.3
- *     Opera 12.1
- *   -moz
- *     Firefox 2-21
+ * 1. float clearfix
+ * 2. position absolute
+ * 3. background color variant for buttons or something like them
+ * 4. border radius
+ * 5. border triangle which is produced by pure CSS
+ * 6. breakpoint for responsible pages
+ * 7. do something on retina device or normal device (@media)
+ * 8. text overflow ellipsis
+ * 9. font face
  *
+ */
+/**
+ * CSS3 Mixins
  *
- * MS Syntax / 2012 Syntax / Flexbox Syntax / WD
- * http://www.w3.org/TR/2012/WD-css3-flexbox-20120322/
+ * This is a set of mixins which helps CSSers adapt some CSS3 prefix
+ * and use the native support of current browsers.
  *
- *   -ms
- *   ! IE 10 Desktop & Mobile
+ * 1. Box-model, Visual
+ * 2. transform, transition ,animtaion and perspective
  *
+ * Note: Consult flex.sass for flexbox's mixins
  *
- * New Syntax / 2014 Syntax / Flex Syntax / CR
- * http://www.w3.org/TR/css3-flexbox/
+ */
+/**
+ * Box-model and Visual
+ */
+/**
+ * tranform, transition, animation and perspective
+ */
+/**
+ * Flex Mixins
  *
- *   -webkit
- *     Chrome 21-27
- *   ! Safari 6.1+
- *   ! iOS Safari 7+
- *   ! Android Browser 4.4+
- *     Opera 15-16
- *   N/A
- *     Chrome 28+
- *     Firefox 22+
- *     Android Firefox 29+
- *     Opera 17+
- *     IE 10+
+ * This is a set of mixins for those who want to mess around with flexbox
+ * using the native support of current browsers. For full support table
+ * check: http://caniuse.com/flexbox
+ *
+ * 1. Flex Container Properties
+ * 2. Flex Item Properties
+ *
  */
 /*
- * FUNCTIONS
+ * Functions
  */
 /*
  * Flex Container Properties
  */
 /*
- * display: flex
- */
-/*
- * display: inline-flex
- */
-/*
- * flex-direction: row | row-reverse | column | column-reverse
- */
-/*
- * flex-wrap: nowrap | wrap | wrap-reverse
- */
-/*
- * flex-flow: <‘flex-direction’> || <‘flex-wrap’>
- */
-/*
- * justify-content: flex-start | flex-end | center | space-between | space-arround
- */
-/*
- * align-items: flex-start | flex-end | center | baseline | stretch
- */
-/*
- * align-content: flex-start | flex-end | center | space-between | space-around | stretch
- */
-/*
  * Flex Item Properties
  */
-/*
- * order: <integer>
- */
-/*
- * align-self: auto | flex-start | flex-end | center | baseline | stretch
- */
-/*
- * flex-grow: <number> // default 0
- * flex-shrink: <number> // default 1
- * flex-basis: <length> | auto // default auto
+/**
+ * flex-grow: <number> (default 0), flex-shrink: <number> (default 1), flex-basis: <length> | auto (default auto)
  * flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
  */
-/* compatible transition when the transition-property is transform  */
-/* compatible transform  */
-/* compatible animation  */
-/* box-sizing setting */
-/* box shadow */
-/* placeholder */
-/* user-select */
-/* backface visibility */
-/* appearance  */
-/* perspective */
-/* opactity */
-/* grayscale */
-/* background size  */
-/* background-origin */
-/* background clip  */
-/* x-radial-gradient */
-/* linear-gradient */
-/* clear float */
-.clearfix:before, .clearfix:after {
-  content: " ";
-  display: table; }
-.clearfix:after {
-  clear: both; }
-
-/* set box sizing */
-.box-sizing-border {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-
-.box-sizing-content {
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box; }
-
-/* float left or right */
-.pull-right {
-  float: right !important; }
-
-.pull-left {
-  float: left !important; }
-
-/* hide or show */
-.hide {
-  display: none !important; }
-
-.show {
-  display: block !important; }
-
-.invisible {
-  visibility: hidden !important; }
-
-.visible {
-  visibility: visible !important; }
-
-/* ul li reset */
-.ul-reset {
-  margin: 0;
-  padding: 0;
-  list-style: none; }
-
-/* text overflow ellipsis */
-.text-overflow {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap; }
-
-/* text align */
-.text-align-center {
-  text-align: center; }
-
-/* vertical align */
-.vertical-align-middle {
-  vertical-align: middle; }
-
-/* dorp back for modal or something like modal */
-/* grayscale */
-/* useful margin sizes */
+/**
+ * CSS3 Mixins
+ *
+ * This is a set of mixins which helps CSSers adapt some CSS3 prefix
+ * and use the native support of current browsers.
+ *
+ * 1. Box-model, Visual
+ * 2. transform, transition ,animtaion and perspective
+ *
+ * Note: Consult flex.sass for flexbox's mixins
+ *
+ */
+/**
+ * Box-model and Visual
+ */
+/**
+ * tranform, transition, animation and perspective
+ */
 .mt0 {
   margin-top: 0px !important; }
 
@@ -980,7 +856,6 @@ body {
 .ml30 {
   margin-left: 30px !important; }
 
-/* useful padding sizes */
 .pt0 {
   padding-top: 0px !important; }
 
@@ -1353,111 +1228,115 @@ body {
 .pl30 {
   padding-left: 30px !important; }
 
-/*
- * flex utilitiy classes, note that one begin width % is for extending in your code
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+.clearfix:after {
+  clear: both; }
+
+.box-sizing-border {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.box-sizing-content {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+.pull-right {
+  float: right !important; }
+
+.pull-left {
+  float: left !important; }
+
+.hide {
+  display: none !important; }
+
+.show {
+  display: block !important; }
+
+.invisible {
+  visibility: hidden !important; }
+
+.visible {
+  visibility: visible !important; }
+
+.ul-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.text-align-left {
+  text-align: left; }
+
+.text-align-center {
+  text-align: center; }
+
+.text-align-right {
+  text-align: right; }
+
+.vertical-align-middle {
+  vertical-align: middle; }
+
+/**
+ * Flex Utilities
+ *
+ * This is a set of classes or placeholders that help you reuse codes to to the extreme.
+ *
+ * 1. Flex Container Properties
+ * 2. Flex Item Properties
+ *
+ * Note: items begin width % is for extending in your code
+ */
+/**
+ * Flex Mixins
+ *
+ * This is a set of mixins for those who want to mess around with flexbox
+ * using the native support of current browsers. For full support table
+ * check: http://caniuse.com/flexbox
+ *
+ * 1. Flex Container Properties
+ * 2. Flex Item Properties
+ *
  */
 /*
- * FLEX MIXINS
- *
- * NOTE: ! for reason to adapt the prefix
- *
- *
- * Old Syntax / 2009 Syntax / Box Syntax / WD
- * http://www.w3.org/TR/2009/WD-css3-flexbox-20090723/
- *
- *   -webkit
- *     Chrome 4-20
- *     Safari 3.1-6.0
- *   ! iOS Safari 3.2-6.1
- *   ! Android Browser 2.1-4.3
- *     Opera 12.1
- *   -moz
- *     Firefox 2-21
- *
- *
- * MS Syntax / 2012 Syntax / Flexbox Syntax / WD
- * http://www.w3.org/TR/2012/WD-css3-flexbox-20120322/
- *
- *   -ms
- *   ! IE 10 Desktop & Mobile
- *
- *
- * New Syntax / 2014 Syntax / Flex Syntax / CR
- * http://www.w3.org/TR/css3-flexbox/
- *
- *   -webkit
- *     Chrome 21-27
- *   ! Safari 6.1+
- *   ! iOS Safari 7+
- *   ! Android Browser 4.4+
- *     Opera 15-16
- *   N/A
- *     Chrome 28+
- *     Firefox 22+
- *     Android Firefox 29+
- *     Opera 17+
- *     IE 10+
- */
-/*
- * FUNCTIONS
+ * Functions
  */
 /*
  * Flex Container Properties
  */
 /*
- * display: flex
- */
-/*
- * display: inline-flex
- */
-/*
- * flex-direction: row | row-reverse | column | column-reverse
- */
-/*
- * flex-wrap: nowrap | wrap | wrap-reverse
- */
-/*
- * flex-flow: <‘flex-direction’> || <‘flex-wrap’>
- */
-/*
- * justify-content: flex-start | flex-end | center | space-between | space-arround
- */
-/*
- * align-items: flex-start | flex-end | center | baseline | stretch
- */
-/*
- * align-content: flex-start | flex-end | center | space-between | space-around | stretch
- */
-/*
  * Flex Item Properties
  */
-/*
- * order: <integer>
- */
-/*
- * align-self: auto | flex-start | flex-end | center | baseline | stretch
- */
-/*
- * flex-grow: <number> // default 0
- * flex-shrink: <number> // default 1
- * flex-basis: <length> | auto // default auto
+/**
+ * flex-grow: <number> (default 0), flex-shrink: <number> (default 1), flex-basis: <length> | auto (default auto)
  * flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
  */
-/* ennable container to be a flex container as well as a block container */
+/**
+ * Flex Container Properties
+ */
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex; }
 
-/* ennable container to be a flex container as well as a inline-block container */
 .inline-flex {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
   display: inline-flex; }
 
-/* ennable container to be a flex container as well as block element and make items in the container layout horizontal */
+/**
+ * ennable container to be a flex container as well as block element and make items
+ * in the container layout horizontal
+ */
 .horizontal {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1480,7 +1359,10 @@ body {
   -webkit-flex-direction: row;
   flex-direction: row; }
 
-/* ennable container to be a flex container as well as inline-block element and make items in the container layout horizontal */
+/**
+ * ennable container to be a flex container as well as inline-block element and make
+ * items in the container layout horizontal
+ */
 .inline-horizontal {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1492,7 +1374,10 @@ body {
   -webkit-flex-direction: row;
   flex-direction: row; }
 
-/* ennable container to be a flex container as well as block element and make items in the container layout vertical */
+/**
+ * ennable container to be a flex container as well as block element and make items in
+ * the container layout vertical
+ */
 .vertical {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1504,7 +1389,10 @@ body {
   -webkit-flex-direction: column;
   flex-direction: column; }
 
-/* ennable container to be a flex container as well as inline-block element and make items in the container layout vertical */
+/**
+ * ennable container to be a flex container as well as inline-block element and make
+ * items in the container layout vertical
+ */
 .inline-vertical {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1548,7 +1436,6 @@ body {
   -moz-align-items: flex-end;
   align-items: flex-end; }
 
-/* Justifying content */
 .center-justify {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -1583,13 +1470,11 @@ body {
   -moz-justify-content: space-between;
   justify-content: space-between; }
 
-/* enable wrapped layouts */
 .wrap {
   -ms-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap; }
 
-/* mirror layout direction */
 .reverse {
   -webkit-box-direction: reverse;
   -webkit-box-orient: horizontal;
@@ -1597,7 +1482,9 @@ body {
   -webkit-flex-direction: row-reverse;
   flex-direction: row-reverse; }
 
-/* set children items' percentage of the remainder */
+/**
+ * Flex Item Properties
+ */
 .flex-1 {
   -webkit-box-flex: 1;
   -ms-flex: 1;
@@ -1712,7 +1599,6 @@ body {
   -webkit-flex: 19;
   flex: 19; }
 
-/* self-align */
 .self-start {
   -webkit-align-self: flex-start;
   -moz-align-self: flex-start;
@@ -1731,6 +1617,58 @@ body {
   -ms-flex-item-align: end;
   align-self: flex-end; }
 
+/**
+ * CSS3 Mixins
+ *
+ * This is a set of mixins which helps CSSers adapt some CSS3 prefix
+ * and use the native support of current browsers.
+ *
+ * 1. Box-model, Visual
+ * 2. transform, transition ,animtaion and perspective
+ *
+ * Note: Consult flex.sass for flexbox's mixins
+ *
+ */
+/**
+ * Box-model and Visual
+ */
+/**
+ * tranform, transition, animation and perspective
+ */
+/**
+ * Common Mixins
+ *
+ * This is a set of useful mixins which will be used frequently.
+ *
+ * 1. float clearfix
+ * 2. position absolute
+ * 3. background color variant for buttons or something like them
+ * 4. border radius
+ * 5. border triangle which is produced by pure CSS
+ * 6. breakpoint for responsible pages
+ * 7. do something on retina device or normal device (@media)
+ * 8. text overflow ellipsis
+ * 9. font face
+ *
+ */
+/**
+ * CSS3 Mixins
+ *
+ * This is a set of mixins which helps CSSers adapt some CSS3 prefix
+ * and use the native support of current browsers.
+ *
+ * 1. Box-model, Visual
+ * 2. transform, transition ,animtaion and perspective
+ *
+ * Note: Consult flex.sass for flexbox's mixins
+ *
+ */
+/**
+ * Box-model and Visual
+ */
+/**
+ * tranform, transition, animation and perspective
+ */
 body {
   padding: 36px; }
 
