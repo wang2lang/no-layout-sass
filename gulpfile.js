@@ -6,9 +6,10 @@ var gulp       = require('gulp'),
     sass       = require('gulp-sass'),
     connect    = require('gulp-connect'),
     open       = require('gulp-open'),
+    plumber    = require('gulp-plumber'),
     config     = {
       server: '0.0.0.0',
-      port:   1818
+      port:   3000
     };
 
 /* connect */
@@ -29,7 +30,9 @@ gulp.task('htmls', function() {
 /* styles */
 gulp.task('styles', function() {
   return gulp.src('example/css/main.sass')
+  .pipe(plumber())
   .pipe(sass())
+  .pipe(plumber.stop())
   .pipe(gulp.dest('example/css'))
   .pipe(connect.reload());
 });
