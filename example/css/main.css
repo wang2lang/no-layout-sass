@@ -1682,16 +1682,8 @@ body {
 
 .one, .two, .three {
   margin: 5px 10px;
+  padding: 5px 10px;
   background-color: #fff; }
-
-.one {
-  padding: 5px; }
-
-.two {
-  padding: 10px; }
-
-.three {
-  padding: 15px; }
 
 .nav {
   margin: 0;
@@ -1701,8 +1693,8 @@ body {
   list-style: none; }
   .nav > li {
     padding: 5px 20px;
-    border: 1px solid red;
     border-radius: 3px;
+    color: #fff;
     background-color: green; }
     .nav > li:hover {
       background-color: #004d00; }
