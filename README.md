@@ -208,7 +208,6 @@ reference
 ================
 visit these websites for more infomation
 * http://www.w3.org/TR/css3-flexbox/ for reference.
-* http://no-layout.diandian.com/post/des
-* http://no-layout.diandian.com/post/utilities
+* http://blog.rainjay.wang/no-layout-sass-flexbox/
 * http://www.w3cplus.com/preprocessor/sass-bring-change.html
 * https://github.com/sass/node-sass
