@@ -3,6 +3,7 @@
   "version": "0.1.4",
   "description": "A Sass library for you to write css layout easily",
   "author": "Wang Chaonan",
+  "Email": "chaonan.wang@ele.me",
   "license": "MIT",
   "devDependencies": {
     "gulp": "^3.8.8",
