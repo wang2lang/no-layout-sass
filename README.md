@@ -1,4 +1,4 @@
-no-layout.sass
+no-layout-sass
 ==================
   It is a Sass library for you to write CSS layout easily. It's not a frame like Bootstrap or Foundation who does everything well and provides a good interface for user. It just handles some compatible problems and provides some encapsulation which helps you to write your css easily on a deeper level.
 
