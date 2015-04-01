@@ -1,0 +1,22 @@
+{
+  "name": "no-layout-sass",
+  "version": "0.1.7",
+  "homepage": "https://github.com/rainjay/no-layout-sass",
+  "authors": [
+    "Wang Chaonan <chaonan.wang@ele.me>"
+  ],
+  "description": "It is a Sass library for you to write CSS layout easily with flexbox",
+  "keywords": [
+    "flexbox",
+    "layout",
+    "sass"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
