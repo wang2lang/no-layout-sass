@@ -397,7 +397,7 @@ body {
  * Flex Item Properties
  */
 /**
- * flex-grow: <number> (default 0), flex-shrink: <number> (default 1), flex-basis: <length> | auto (default auto)
+ * flex-grow: <number> (default 0), flex-shrink: <number> (default 1), flex-basis: <length> | auto (default 1)
  * flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
  */
 /**
@@ -463,7 +463,7 @@ body {
  * Flex Item Properties
  */
 /**
- * flex-grow: <number> (default 0), flex-shrink: <number> (default 1), flex-basis: <length> | auto (default auto)
+ * flex-grow: <number> (default 0), flex-shrink: <number> (default 1), flex-basis: <length> | auto (default 1)
  * flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
  */
 /**
@@ -1228,6 +1228,123 @@ body {
 .pl30 {
   padding-left: 30px !important; }
 
+.fs10 {
+  font-size: 10px !important; }
+
+.fs11 {
+  font-size: 11px !important; }
+
+.fs12 {
+  font-size: 12px !important; }
+
+.fs13 {
+  font-size: 13px !important; }
+
+.fs14 {
+  font-size: 14px !important; }
+
+.fs15 {
+  font-size: 15px !important; }
+
+.fs16 {
+  font-size: 16px !important; }
+
+.fs17 {
+  font-size: 17px !important; }
+
+.fs18 {
+  font-size: 18px !important; }
+
+.fs19 {
+  font-size: 19px !important; }
+
+.fs20 {
+  font-size: 20px !important; }
+
+.fs21 {
+  font-size: 21px !important; }
+
+.fs22 {
+  font-size: 22px !important; }
+
+.fs23 {
+  font-size: 23px !important; }
+
+.fs24 {
+  font-size: 24px !important; }
+
+.fs25 {
+  font-size: 25px !important; }
+
+.fs26 {
+  font-size: 26px !important; }
+
+.fs27 {
+  font-size: 27px !important; }
+
+.fs28 {
+  font-size: 28px !important; }
+
+.fs29 {
+  font-size: 29px !important; }
+
+.fs30 {
+  font-size: 30px !important; }
+
+.fs31 {
+  font-size: 31px !important; }
+
+.fs32 {
+  font-size: 32px !important; }
+
+.fs33 {
+  font-size: 33px !important; }
+
+.fs34 {
+  font-size: 34px !important; }
+
+.fs35 {
+  font-size: 35px !important; }
+
+.fs36 {
+  font-size: 36px !important; }
+
+.fs37 {
+  font-size: 37px !important; }
+
+.fs38 {
+  font-size: 38px !important; }
+
+.fs39 {
+  font-size: 39px !important; }
+
+.fs40 {
+  font-size: 40px !important; }
+
+.fs41 {
+  font-size: 41px !important; }
+
+.fs42 {
+  font-size: 42px !important; }
+
+.fs43 {
+  font-size: 43px !important; }
+
+.fs44 {
+  font-size: 44px !important; }
+
+.fs45 {
+  font-size: 45px !important; }
+
+.fs46 {
+  font-size: 46px !important; }
+
+.fs47 {
+  font-size: 47px !important; }
+
+.fs48 {
+  font-size: 48px !important; }
+
 .clearfix:before, .clearfix:after {
   content: " ";
   display: table; }
@@ -1315,7 +1432,7 @@ body {
  * Flex Item Properties
  */
 /**
- * flex-grow: <number> (default 0), flex-shrink: <number> (default 1), flex-basis: <length> | auto (default auto)
+ * flex-grow: <number> (default 0), flex-shrink: <number> (default 1), flex-basis: <length> | auto (default 1)
  * flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
  */
 /**
@@ -1325,13 +1442,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  display: flex; }
+  display: flex;
+  flex: none; }
 
 .inline-flex {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
-  display: inline-flex; }
+  display: inline-flex;
+  flex: none; }
 
 /**
  * ennable container to be a flex container as well as block element and make items
@@ -1346,7 +1465,8 @@ body {
   -webkit-box-orient: horizontal;
   -ms-flex-direction: row;
   -webkit-flex-direction: row;
-  flex-direction: row; }
+  flex-direction: row;
+  flex: none; }
 
 .nav {
   display: -webkit-box;
@@ -1357,7 +1477,8 @@ body {
   -webkit-box-orient: horizontal;
   -ms-flex-direction: row;
   -webkit-flex-direction: row;
-  flex-direction: row; }
+  flex-direction: row;
+  flex: none; }
 
 /**
  * ennable container to be a flex container as well as inline-block element and make
@@ -1372,7 +1493,8 @@ body {
   -webkit-box-orient: horizontal;
   -ms-flex-direction: row;
   -webkit-flex-direction: row;
-  flex-direction: row; }
+  flex-direction: row;
+  flex: none; }
 
 /**
  * ennable container to be a flex container as well as block element and make items in
@@ -1387,7 +1509,8 @@ body {
   -webkit-box-orient: vertical;
   -ms-flex-direction: column;
   -webkit-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  flex: none; }
 
 /**
  * ennable container to be a flex container as well as inline-block element and make
@@ -1402,7 +1525,8 @@ body {
   -webkit-box-orient: vertical;
   -ms-flex-direction: column;
   -webkit-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  flex: none; }
 
 /*
  * By default, children stretch to fit the cross-axis, bellow class will enable them to start,
@@ -1486,118 +1610,118 @@ body {
  * Flex Item Properties
  */
 .flex-1 {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  -webkit-flex: 1;
-  flex: 1; }
+  -webkit-box-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  -webkit-flex: 1 1 0;
+  flex: 1 1 0; }
 
 .flex-2 {
-  -webkit-box-flex: 2;
-  -ms-flex: 2;
-  -webkit-flex: 2;
-  flex: 2; }
+  -webkit-box-flex: 2 1 0;
+  -ms-flex: 2 1 0;
+  -webkit-flex: 2 1 0;
+  flex: 2 1 0; }
 
 .flex-3 {
-  -webkit-box-flex: 3;
-  -ms-flex: 3;
-  -webkit-flex: 3;
-  flex: 3; }
+  -webkit-box-flex: 3 1 0;
+  -ms-flex: 3 1 0;
+  -webkit-flex: 3 1 0;
+  flex: 3 1 0; }
 
 .flex-4 {
-  -webkit-box-flex: 4;
-  -ms-flex: 4;
-  -webkit-flex: 4;
-  flex: 4; }
+  -webkit-box-flex: 4 1 0;
+  -ms-flex: 4 1 0;
+  -webkit-flex: 4 1 0;
+  flex: 4 1 0; }
 
 .flex-5 {
-  -webkit-box-flex: 5;
-  -ms-flex: 5;
-  -webkit-flex: 5;
-  flex: 5; }
+  -webkit-box-flex: 5 1 0;
+  -ms-flex: 5 1 0;
+  -webkit-flex: 5 1 0;
+  flex: 5 1 0; }
 
 .flex-6 {
-  -webkit-box-flex: 6;
-  -ms-flex: 6;
-  -webkit-flex: 6;
-  flex: 6; }
+  -webkit-box-flex: 6 1 0;
+  -ms-flex: 6 1 0;
+  -webkit-flex: 6 1 0;
+  flex: 6 1 0; }
 
 .flex-7 {
-  -webkit-box-flex: 7;
-  -ms-flex: 7;
-  -webkit-flex: 7;
-  flex: 7; }
+  -webkit-box-flex: 7 1 0;
+  -ms-flex: 7 1 0;
+  -webkit-flex: 7 1 0;
+  flex: 7 1 0; }
 
 .flex-8 {
-  -webkit-box-flex: 8;
-  -ms-flex: 8;
-  -webkit-flex: 8;
-  flex: 8; }
+  -webkit-box-flex: 8 1 0;
+  -ms-flex: 8 1 0;
+  -webkit-flex: 8 1 0;
+  flex: 8 1 0; }
 
 .flex-9 {
-  -webkit-box-flex: 9;
-  -ms-flex: 9;
-  -webkit-flex: 9;
-  flex: 9; }
+  -webkit-box-flex: 9 1 0;
+  -ms-flex: 9 1 0;
+  -webkit-flex: 9 1 0;
+  flex: 9 1 0; }
 
 .flex-10 {
-  -webkit-box-flex: 10;
-  -ms-flex: 10;
-  -webkit-flex: 10;
-  flex: 10; }
+  -webkit-box-flex: 10 1 0;
+  -ms-flex: 10 1 0;
+  -webkit-flex: 10 1 0;
+  flex: 10 1 0; }
 
 .flex-11 {
-  -webkit-box-flex: 11;
-  -ms-flex: 11;
-  -webkit-flex: 11;
-  flex: 11; }
+  -webkit-box-flex: 11 1 0;
+  -ms-flex: 11 1 0;
+  -webkit-flex: 11 1 0;
+  flex: 11 1 0; }
 
 .flex-12 {
-  -webkit-box-flex: 12;
-  -ms-flex: 12;
-  -webkit-flex: 12;
-  flex: 12; }
+  -webkit-box-flex: 12 1 0;
+  -ms-flex: 12 1 0;
+  -webkit-flex: 12 1 0;
+  flex: 12 1 0; }
 
 .flex-13 {
-  -webkit-box-flex: 13;
-  -ms-flex: 13;
-  -webkit-flex: 13;
-  flex: 13; }
+  -webkit-box-flex: 13 1 0;
+  -ms-flex: 13 1 0;
+  -webkit-flex: 13 1 0;
+  flex: 13 1 0; }
 
 .flex-14 {
-  -webkit-box-flex: 14;
-  -ms-flex: 14;
-  -webkit-flex: 14;
-  flex: 14; }
+  -webkit-box-flex: 14 1 0;
+  -ms-flex: 14 1 0;
+  -webkit-flex: 14 1 0;
+  flex: 14 1 0; }
 
 .flex-15 {
-  -webkit-box-flex: 15;
-  -ms-flex: 15;
-  -webkit-flex: 15;
-  flex: 15; }
+  -webkit-box-flex: 15 1 0;
+  -ms-flex: 15 1 0;
+  -webkit-flex: 15 1 0;
+  flex: 15 1 0; }
 
 .flex-16 {
-  -webkit-box-flex: 16;
-  -ms-flex: 16;
-  -webkit-flex: 16;
-  flex: 16; }
+  -webkit-box-flex: 16 1 0;
+  -ms-flex: 16 1 0;
+  -webkit-flex: 16 1 0;
+  flex: 16 1 0; }
 
 .flex-17 {
-  -webkit-box-flex: 17;
-  -ms-flex: 17;
-  -webkit-flex: 17;
-  flex: 17; }
+  -webkit-box-flex: 17 1 0;
+  -ms-flex: 17 1 0;
+  -webkit-flex: 17 1 0;
+  flex: 17 1 0; }
 
 .flex-18 {
-  -webkit-box-flex: 18;
-  -ms-flex: 18;
-  -webkit-flex: 18;
-  flex: 18; }
+  -webkit-box-flex: 18 1 0;
+  -ms-flex: 18 1 0;
+  -webkit-flex: 18 1 0;
+  flex: 18 1 0; }
 
 .flex-19 {
-  -webkit-box-flex: 19;
-  -ms-flex: 19;
-  -webkit-flex: 19;
-  flex: 19; }
+  -webkit-box-flex: 19 1 0;
+  -ms-flex: 19 1 0;
+  -webkit-flex: 19 1 0;
+  flex: 19 1 0; }
 
 .self-start {
   -webkit-align-self: flex-start;

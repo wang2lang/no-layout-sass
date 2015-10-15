@@ -145,6 +145,9 @@ no-layout-sass
 
 * .pt0 ~ .pt30, .pr0 ~ .pr30, .pb0 ~ .pb30, .pl0 ~ .pl30  //the most frequently used padding (with !important)
 
+* .fs10 ~ .fs48  //the most frequently used font size (with !important)
+
+
 ### css3 compatiable mixins you can use in no-layout
 * +transform($value)
 
