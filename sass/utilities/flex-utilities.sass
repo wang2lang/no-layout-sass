@@ -43,12 +43,14 @@
  * ennable container to be a flex container as well as block element and make items
  * in the container layout horizontal
  */
-.horizontal
+.horizontal,
+.row
   +flex
   +flex-direction(row)
   flex: none
 
-%horizontal
+%horizontal,
+%row
   +flex
   +flex-direction(row)
   flex: none
@@ -58,12 +60,14 @@
  * ennable container to be a flex container as well as inline-block element and make
  * items in the container layout horizontal
  */
-.inline-horizontal
+.inline-horizontal,
+.inline-row
   +inline-flex
   +flex-direction(row)
   flex: none
 
-%inline-horizontal
+%inline-horizontal,
+%inline-row
   +inline-flex
   +flex-direction(row)
   flex: none
@@ -73,12 +77,14 @@
  * ennable container to be a flex container as well as block element and make items in
  * the container layout vertical
  */
-.vertical
+.vertical,
+.column
   +flex
   +flex-direction(column)
   flex: none
 
-%vertical
+%vertical,
+%column
   +flex
   +flex-direction(column)
   flex: none
@@ -88,12 +94,14 @@
  * ennable container to be a flex container as well as inline-block element and make
  * items in the container layout vertical
  */
-.inline-vertical
+.inline-vertical,
+.inline-column
   +inline-flex
   +flex-direction(column)
   flex: none
 
-%inline-vertical
+%inline-vertical,
+%inline-column
   +inline-flex
   +flex-direction(column)
   flex: none
@@ -103,54 +111,70 @@
  * By default, children stretch to fit the cross-axis, bellow class will enable them to start,
  * center, baseline or end accros the main axis.
  */
-.start
+.start,
+.align-start
   +align-items(flex-start)
 
-.center
+.center,
+.align-center
   +align-items(center)
 
-.baseline
+.baseline,
+.align-baseline
   +align-items(baseline)
 
-.end
+.end,
+.align-end
   +align-items(flex-end)
 
-%start
+%start,
+%align-start
   +align-items(flex-start)
 
-%center
+%center,
+%align-center
   +align-items(center)
 
-%baseline
+%baseline,
+%align-baseline
   +align-items(baseline)
 
-%end
+%end,
+%align-end
   +align-items(flex-end)
 
 
 // Justifying content
-.center-justify
+.center-justify,
+.justify-center
   +justify-content(center)
 
-.end-justify
+.end-justify,
+.justify-end
   +justify-content(flex-end)
 
-.around-justify
+.around-justify,
+.justify-space-around
   +justify-content(space-around)
 
-.justify
+.justify,
+.justify-space-between
   +justify-content(space-between)
 
-%center-justify
+%center-justify,
+%justify-center
   +justify-content(center)
 
-%end-justify
+%end-justify,
+%justify-end
   +justify-content(flex-end)
 
-%around-justify
+%around-justify,
+%justify-space-around
   +justify-content(space-around)
 
-%justify
+%justify,
+%justify-space-between
   +justify-content(space-between)
 
 

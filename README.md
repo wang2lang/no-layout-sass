@@ -60,31 +60,31 @@ no-layout-sass
 
 * .inline-flex | %inline-flex  //defines a inline-block flex container
 
-* .horizontal | %horizontal  /defines a block flex container and flex items are placed from left to right (flex items are laid out along on the current line and are packed toward to the start of the current line by default)
+* .row | %row (.horizontal | %horizontal) //defines a block flex container and flex items are placed from left to right (flex items are laid out along on the current line and are packed toward to the start of the current line by default)
 
-* .inline-horizontal | %inline-horizontal  /defines a inline-block flex container and flex items are placed from left to right (flex items are laid out along on the current line and are packed toward to the start of the current line by default)
+* .inline-row | %inline-row (.inline-horizontal | %inline-horizontal)  //defines a inline-block flex container and flex items are placed from left to right (flex items are laid out along on the current line and are packed toward to the start of the current line by default)
 
-* .vertical | %vertical  //defines a block flex container and flex items are placed from top to bottom (flex items are laid out along the cross axis on the current line and are stretch to fill the container)
+* .column | %column (.vertical | %vertical) //defines a block flex container and flex items are placed from top to bottom (flex items are laid out along the cross axis on the current line and are stretch to fill the container)
 
-* .inline-vertical | %inline-vertical  //defines a inline-block flex container and flex items are placed from top to bottom (flex items are laid out along the cross axis on the current line and are stretch to fill the container)
+* .inline-column | %inline-column (.inline-vertical | %inline-vertical) //defines a inline-block flex container and flex items are placed from top to bottom (flex items are laid out along the cross axis on the current line and are stretch to fill the container)
 
 * .reverse | %reverse //mirror layout direction
 
-* .center-justify | %center-justify  //flex items are laid out along the current line and are centered along the current line
+* .justify-center | %justify-center (.center-justify | %center-justify) //flex items are laid out along the current line and are centered along the current line
 
-* .end-justify | %end-justify  //flex items are laid out along the current line and are packed toward to end of the current line
+* .justify-end | %justify-end (.end-justify | %end-justify) //flex items are laid out along the current line and are packed toward to end of the current line
 
-* .around-justify | %around-justify  //flex items are laid out along the current line and are evenly distributed in the current line with equal space around them
+* .justify-space-around | %justify-space-around (.around-justify | %around-justify) //flex items are laid out along the current line and are evenly distributed in the current line with equal space around them
 
-* .justifiy | %justify  //flex items are laid out along the current line and are evenly distributed in the current line; first item is on the start line, last item on the end line
+* .justify-space-between | %justify-space-between (.justifiy | %justify) //flex items are laid out along the current line and are evenly distributed in the current line; first item is on the start line, last item on the end line
 
-* .start | %start  //flex items are laid out along the cross axis on the current line and are placed on the cross-start line
+* .align-start | %align-start (.start | %start) //flex items are laid out along the cross axis on the current line and are placed on the cross-start line
 
-* .center | %center  //flex items are laid out along the cross axis on the current line and are placed in the cross-axis
+* .align-center | %align-center (.center | %center) //flex items are laid out along the cross axis on the current line and are placed in the cross-axis
 
-* .end | %end  //flex items are laid out along the cross axis on the current line and are placed on the cross-end line
+* .align-end | %align-end (.end | %end) //flex items are laid out along the cross axis on the current line and are placed on the cross-end line
 
-* .baseline | %baseline  //flex items are laid out along the cross axis on the current line and are aligned such as their baselines align
+* .algin-baseline | %align-baseline (.baseline | %baseline) //flex items are laid out along the cross axis on the current line and are aligned such as their baselines align
 
 * .wrap | %wrap  //flex items are multi-line wraped in from left to right
 

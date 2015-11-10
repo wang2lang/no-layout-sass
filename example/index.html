@@ -7,171 +7,171 @@
   <title>No-layout.sass Demo</title>
 </head>
 <body>
-  <h2>1. horizontal, 设置容器布局环境为flex，同时子元素水平排列。</h2>
-  <div class="horizontal demo-container">
+  <h2>1. horizontal(row), 设置容器布局环境为flex，同时子元素水平排列。</h2>
+  <div class="row demo-container">
     <div class="one">One</div>
     <div class="two">Two</div>
     <div class="three">Three</div>
   </div>
-  <h2>2. inline-horizontal, 设置容器布局环境为inline-flex,同时子元素水平排列。</h2>
-  <div class="inline-horizontal demo-container">
+  <h2>2. inline-horizontal(inline-row), 设置容器布局环境为inline-flex,同时子元素水平排列。</h2>
+  <div class="inline-row demo-container">
     <div class="one">One</div>
     <div class="two">Two</div>
     <div class="three">Three</div>
   </div>
-  <h2>3. vertical, 设置容器布局环境为flex,同时子元素垂直排列</h2>
-  <div class="vertical demo-container">
+  <h2>3. vertical(column), 设置容器布局环境为flex,同时子元素垂直排列</h2>
+  <div class="column demo-container">
     <div class="one">One</div>
     <div class="two">Two</div>
     <div class="three">Three</div>
   </div>
-  <h2>4. inline-vertical, 设置容器布局环境为inline-flex,同时子元素垂直排列</h2>
-  <div class="inline-vertical demo-container">
+  <h2>4. inline-vertical(column), 设置容器布局环境为inline-flex,同时子元素垂直排列</h2>
+  <div class="inline-column demo-container">
     <div class="one">One</div>
     <div class="two">Two</div>
     <div class="three">Three</div>
   </div>
-  <h2>5. horizontal flex1,设置容器布局环境为flex，子元素水平排列，子元素two为flex-1</h2>
+  <h2>5. horizontal(row) flex1,设置容器布局环境为flex，子元素水平排列，子元素two为flex-1</h2>
   <div class="horizontal demo-container">
     <div class="one">One</div>
     <div class="flex-1 two">Two flex-1</div>
     <div class="three">Three</div>
   </div>
-  <h2>6. vertical flex1 height-200, 设置高为200px容器布局环境为flex,子元素垂直排列,子元素two为flex-1</h2>
+  <h2>6. vertical(column) flex1 height-200, 设置高为200px容器布局环境为flex,子元素垂直排列,子元素two为flex-1</h2>
   <div class="vertical demo-container height-200">
     <div class="one">One</div>
     <div class="flex-1 two">Two flex-1</div>
     <div class="three">Three</div>
   </div>
-  <h2>7. horizontal flex3 flex2 flex1,设置容器布局环境为flex，子元素水平排列，且分别为flex-3, flex-2, flex-1</h2>
+  <h2>7. horizontal(row) flex3 flex2 flex1,设置容器布局环境为flex，子元素水平排列，且分别为flex-3, flex-2, flex-1</h2>
   <div class="horizontal demo-container">
     <div class="flex-3 one">One flex-3</div>
     <div class="flex-2 two">Two flex-2</div>
     <div class="flex-1 three">Three flex-1</div>
   </div>
-  <h2>8. vertical flex3 flex2 flex1 height-200, 设置高为200px容器布局环境为flex，子元素垂直排列，且分别为flex-3, flex-2, flex-1</h2>
+  <h2>8. vertical(column) flex3 flex2 flex1 height-200, 设置高为200px容器布局环境为flex，子元素垂直排列，且分别为flex-3, flex-2, flex-1</h2>
   <div class="vertical demo-container height-200">
     <div class="flex-3 one">One flex-3</div>
     <div class="flex-2 two">Two flex-2</div>
     <div class="flex-1 three">Three flex-1</div>
   </div>
-  <h2>9. horizontal start height-200, 设置高为200px容器布局环境为flex，子元素水平排列，且在子元素堆叠所垂直的方向上，靠近开始位置。</h2>
+  <h2>9. horizontal(row) start(align-start) height-200, 设置高为200px容器布局环境为flex，子元素水平排列，且在子元素堆叠所垂直的方向上，靠近开始位置。</h2>
   <div class="horizontal start demo-container height-200">
     <div class="one">One</div>
     <div class="two">Two</div>
     <div class="three">Three</div>
   </div>
-  <h2>10. horizontal center height-200, 设置高为200px容器布局环境为flex，子元素水平排列，且在子元素堆叠所垂直的方向上，居中</h2>
+  <h2>10. horizontal(row) center(align-center) height-200, 设置高为200px容器布局环境为flex，子元素水平排列，且在子元素堆叠所垂直的方向上，居中</h2>
   <div class="horizontal center demo-container height-200">
     <div class="one">One</div>
     <div class="two">Two</div>
     <div class="three">Three</div>
   </div>
-  <h2>11. horizontal end height-200, 设置高为200px容器布局环境为flex，子元素水平排列，且在子元素堆叠所垂直方向上，靠近尾部</h2>
+  <h2>11. horizontal(row) end(align-end) height-200, 设置高为200px容器布局环境为flex，子元素水平排列，且在子元素堆叠所垂直方向上，靠近尾部</h2>
   <div class="horizontal end demo-container height-200">
     <div class="one">One</div>
     <div class="two">Two</div>
     <div class="three">Three</div>
   </div>
-  <h2>12. horizontal baseline height-200, 设置高为200px容器布局环境为flex，子元素水平排列(padding不同)，且在子元素堆叠所垂直方向上，以bseline对齐</h2>
+  <h2>12. horizontal(row) baseline(align-baseline) height-200, 设置高为200px容器布局环境为flex，子元素水平排列(padding不同)，且在子元素堆叠所垂直方向上，以bseline对齐</h2>
   <div class="horizontal baseline demo-container height-200">
     <div class="one" style="padding: 10px">One</div>
     <div class="two" style="padding: 20px">Two</div>
     <div class="three" style="padding: 30px">Three</div>
   </div>
-  <h2>13. vertical start, 设置容器布局环境为flex，子元素垂直排列,且在与子元素堆叠方向所垂直的方向上，子元素靠近开始位置。(默认撑满)</h2>
+  <h2>13. vertical(column) start(align-start), 设置容器布局环境为flex，子元素垂直排列,且在与子元素堆叠方向所垂直的方向上，子元素靠近开始位置。(默认撑满)</h2>
   <div class="vertical start demo-container">
     <div class="one">One</div>
     <div class="two">Two</div>
     <div class="three">Three</div>
   </div>
-  <h2>14. vertical center, 设置容器布局环境为flex，子元素垂直排列，且在与子元素堆叠方向所垂直的方向上，子元素居中。</h2>
+  <h2>14. vertical(column) center(align-center), 设置容器布局环境为flex，子元素垂直排列，且在与子元素堆叠方向所垂直的方向上，子元素居中。</h2>
   <div class="vertical center demo-container">
     <div class="one">One</div>
     <div class="two">Two</div>
     <div class="three">Three</div>
   </div>
-  <h2>15. vertical end, 设置容器布局环境为flex，子元素垂直排列，且在与子元素堆叠方向所垂直的方向上，子元素靠近尾部。</h2>
+  <h2>15. vertical(column) end(align-end), 设置容器布局环境为flex，子元素垂直排列，且在与子元素堆叠方向所垂直的方向上，子元素靠近尾部。</h2>
   <div class="vertical end demo-container">
     <div class="one">One</div>
     <div class="two">Two</div>
     <div class="three">Three</div>
   </div>
-  <h2>16. horizontal center-justify,设置容器布局环境为flex，子元素垂直排列，且在元素堆叠方向上，子元素居中。(默认在开始位置)</h2>
+  <h2>16. horizontal(row) center-justify(justify-center),设置容器布局环境为flex，子元素水平排列，且在元素堆叠方向上，子元素居中。(默认在开始位置)</h2>
   <div class="horizontal center-justify demo-container">
     <div class="one">One</div>
     <div class="two">Two</div>
     <div class="three">Three</div>
   </div>
-  <h2>17. horizontal center-justify,设置容器布局环境为flex，子元素垂直排列，且在元素堆叠方向上，子元素靠近尾部。</h2>
+  <h2>17. horizontal(row) end-justify(justify-end),设置容器布局环境为flex，子元素水平排列，且在元素堆叠方向上，子元素靠近尾部。</h2>
   <div class="horizontal end-justify demo-container">
     <div class="one">One</div>
     <div class="two">Two</div>
     <div class="three">Three</div>
   </div>
-  <h2>18. horizontal around-justify,设置容器布局环境为flex，子元素垂直排列，且在元素堆叠方向上，子元素around排列。</h2>
+  <h2>18. horizontal(row) around-justify(justify-space-around),设置容器布局环境为flex，子元素垂直排列，且在元素堆叠方向上，子元素around排列。</h2>
   <div class="horizontal around-justify demo-container">
     <div class="one">One</div>
     <div class="two">Two</div>
     <div class="three">Three</div>
   </div>
-  <h2>19. horizontal justify,设置容器布局环境为flex，子元素垂直排列，且在元素堆叠方向上，子元素两端对齐排列。</h2>
+  <h2>19. horizontal(row) justify(justify-space-between),设置容器布局环境为flex，子元素垂直排列，且在元素堆叠方向上，子元素两端对齐排列。</h2>
   <div class="horizontal justify demo-container">
     <div class="one">One</div>
     <div class="two">Two</div>
     <div class="three">Three</div>
   </div>
-  <h2>20. horizontal justify (child self-start self-center self-end) height-200,设置高度为200px的容器布局环境为flex,子元素分别为self-start,self-center,self-end.(默认撑满)</h2>
+  <h2>20. horizontal(row) justify(justify-space-between) self-start self-center self-end height-200,设置高度为200px的容器布局环境为flex,子元素分别为self-start,self-center,self-end.(默认撑满)</h2>
   <div class="horizontal justify demo-container height-200">
     <div class="one self-start">One self-start</div>
     <div class="two self-center">Two self-center</div>
     <div class="three self-end">Three self-end</div>
     <div class="one">default</div>
   </div>
-  <h2>21. vertical center-justify height-200, 设置高度为200px容器布局环境为flex，子元素垂直排列，且在元素堆叠方向上居中（默认在开始位置）</h2>
+  <h2>21. vertical(column) center-justify(justify-center) height-200, 设置高度为200px容器布局环境为flex，子元素垂直排列，且在元素堆叠方向上居中（默认在开始位置）</h2>
   <div class="vertical center-justify demo-container height-200">
     <div class="one">One</div>
     <div class="two">Two</div>
     <div class="three">Three</div>
   </div>
-  <h2>22. vertical end-justify height-200, 设置高度为200px容器布局环境为flex，子元素垂直排列，且在元素堆叠方向上靠近尾部</h2>
+  <h2>22. vertical(column) end-justify(justify-end) height-200, 设置高度为200px容器布局环境为flex，子元素垂直排列，且在元素堆叠方向上靠近尾部</h2>
   <div class="vertical end-justify demo-container height-200">
     <div class="one">One</div>
     <div class="two">Two</div>
     <div class="three">Three</div>
   </div>
-  <h2>23. vertical around-justify height-200, 设置高度为200px容器布局环境为flex，子元素垂直排列，且在元素堆叠方向上around排列。</h2>
+  <h2>23. vertical(column) around-justify(justify-space-around) height-200, 设置高度为200px容器布局环境为flex，子元素垂直排列，且在元素堆叠方向上around排列。</h2>
   <div class="vertical around-justify demo-container height-200">
     <div class="one">One</div>
     <div class="two">Two</div>
     <div class="three">Three</div>
   </div>
-  <h2>24. vertical justify height-200, 设置高度为200px容器布局环境为flex，子元素垂直排列，且在元素堆叠方向上两端对齐。</h2>
+  <h2>24. vertical(column) justify(justify-space-between) height-200, 设置高度为200px容器布局环境为flex，子元素垂直排列，且在元素堆叠方向上两端对齐。</h2>
   <div class="vertical justify demo-container height-200">
     <div class="one">One</div>
     <div class="two">Two</div>
     <div class="three">Three</div>
   </div>
-  <h2>25. vertical justify (child self-start self-center self-end) height-200, 设置高度为200px的容器布局环境为flex，子元素垂直排列，分别为self-start,self-center, self-end(默认撑满)</h2>
+  <h2>25. vertical(column) justify(justify-space-between) self-start self-center self-end height-200, 设置高度为200px的容器布局环境为flex，子元素垂直排列，分别为self-start,self-center, self-end(默认撑满)</h2>
   <div class="vertical justify demo-container height-200">
     <div class="one self-start">One self-start</div>
     <div class="two self-center">Two self-center</div>
     <div class="three self-end">Three self-end</div>
     <div class="one">default</div>
   </div>
-  <h2>26. horizontal wrap, 设置宽度为200px的容器的布局环境为flex, 子元素水平排列,子元素超过父元素长度时包裹。</h2>
+  <h2>26. horizontal(row) wrap, 设置宽度为200px的容器的布局环境为flex, 子元素水平排列,子元素超过父元素长度时包裹。</h2>
   <div class="horizontal wrap demo-container" style="width: 200px;">
     <div class="one" style="100px">One</div>
     <div class="two" style="80px">Two</div>
     <div class="three" style="30px">Three</div>
   </div>
-  <h2>27. horizontal reverse, 设置容器为flex布局环境，子元素水平排列，且镜像。</h2>
+  <h2>27. horizontal(row) reverse, 设置容器为flex布局环境，子元素水平排列，且镜像。</h2>
   <div class="horizontal reverse demo-container">
     <div class="one">One</div>
     <div class="two">Two</div>
     <div class="three">Three</div>
   </div>
-  <h2>28. @extend %horizontal, @extend %justify,父容器@extend %horizontal，@extend %justify</h2>
+  <h2>28. @extend %row, @extend %justify-space-between,父容器@extend %row, @extend %justify-space-between</h2>
   <ul class="nav">
     <li>nav1</li>
     <li>nav2</li>

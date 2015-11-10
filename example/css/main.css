@@ -1456,7 +1456,7 @@ body {
  * ennable container to be a flex container as well as block element and make items
  * in the container layout horizontal
  */
-.horizontal {
+.horizontal, .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -1484,7 +1484,7 @@ body {
  * ennable container to be a flex container as well as inline-block element and make
  * items in the container layout horizontal
  */
-.inline-horizontal {
+.inline-horizontal, .inline-row {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
@@ -1500,7 +1500,7 @@ body {
  * ennable container to be a flex container as well as block element and make items in
  * the container layout vertical
  */
-.vertical {
+.vertical, .column {
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -1516,7 +1516,7 @@ body {
  * ennable container to be a flex container as well as inline-block element and make
  * items in the container layout vertical
  */
-.inline-vertical {
+.inline-vertical, .inline-column {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
@@ -1532,55 +1532,55 @@ body {
  * By default, children stretch to fit the cross-axis, bellow class will enable them to start,
  * center, baseline or end accros the main axis.
  */
-.start {
+.start, .align-content-start {
   -webkit-box-align: start;
   -ms-flex-align: start;
   -webkit-align-items: flex-start;
   -moz-align-items: flex-start;
   align-items: flex-start; }
 
-.center {
+.center, .align-content-center {
   -webkit-box-align: center;
   -ms-flex-align: center;
   -webkit-align-items: center;
   -moz-align-items: center;
   align-items: center; }
 
-.baseline {
+.baseline, .align-content-baseline {
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
   -webkit-align-items: baseline;
   -moz-align-items: baseline;
   align-items: baseline; }
 
-.end {
+.end, .align-content-end {
   -webkit-box-align: end;
   -ms-flex-align: end;
   -webkit-align-items: flex-end;
   -moz-align-items: flex-end;
   align-items: flex-end; }
 
-.center-justify {
+.center-justify, .justify-content-center {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   -moz-justify-content: center;
   justify-content: center; }
 
-.end-justify {
+.end-justify, .justify-content-end {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   -webkit-justify-content: flex-end;
   -moz-justify-content: flex-end;
   justify-content: flex-end; }
 
-.around-justify {
+.around-justify, .justify-content-space-around {
   -ms-flex-pack: distribute;
   -webkit-justify-content: space-around;
   -moz-justify-content: space-around;
   justify-content: space-around; }
 
-.justify {
+.justify, .justify-content-space-between {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   -webkit-justify-content: space-between;
