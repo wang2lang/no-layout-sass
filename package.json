@@ -1,6 +1,6 @@
 {
   "name": "no-layout-sass",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "It is a Sass library for you to write CSS layout easily with flexbox",
   "author": "Wang Chaonan",
   "Email": "chaonan.wang@ele.me",
