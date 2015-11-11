@@ -1,0 +1,50 @@
+
+/**
+ * Common Utilities
+ *
+ * This is a set of placeholters that will be used frequently, items which begin with %
+ * are for extending (@extend %item) in your sass code, these code could help you reuse
+ * codes to to the extreme.
+ *
+ * Note: items begin width % is for extending in your code
+ */
+
+
+
+
+// import mixins they need
+@import '../mixins/common.sass'
+@import '../mixins/flex.sass'
+@import '../mixins/css3.sass'
+
+// clear float
+%clearfix
+  +clearfix()
+
+
+// set box sizing
+%box-sizing-border
+  +box-sizing(border-box)
+
+%box-sizing-content
+  +box-sizing(content-box)
+
+// ul li reset
+%ul-reset
+  margin:  0
+  padding: 0
+  list-style: none
+
+
+// text overflow ellipsis
+%text-truncate
+  +text-truncate
+
+// drop back for modals or something like modal
+%drop-back
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  z-index: 9999

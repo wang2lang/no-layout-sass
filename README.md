@@ -17,6 +17,10 @@ no-layout-sass
 
     @import 'sass/no-layout.sass'
 
+  If you don't want to use the existed classes in no-layout-sass, you can import no-layout-utilities.sass in your main sass file, then you will just get some mixins and useful placeholders in your project, such as:
+
+    @import 'sass/no-layout-utilities.sass'
+
 ### flexbox Mixins
   Flexbox is pretty awesome and is certainly part of the future of layout. The syntax has changed quite a bit over the past few years, hence the "Old" and "New" syntax. Flexbox Mixins help you weave together the old, new, and in-between syntaxes, which can get decent browser support. (Be careful for +align-self($value) and +justify-content(space-around) in old syntax browsers)
 

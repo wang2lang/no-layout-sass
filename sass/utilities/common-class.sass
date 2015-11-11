@@ -1,0 +1,115 @@
+
+/**
+ * Common Utilities
+ *
+ * This is a set of classesthat will be used frequently, these code could
+ * help you reuse codes to to the extreme.
+ */
+
+
+
+
+// import mixins they need
+@import '../mixins/common.sass'
+@import '../mixins/flex.sass'
+@import '../mixins/css3.sass'
+
+
+// useful margin sizes (from 0 to 30)
+@for $i from 0 to 31
+  .mt#{$i}
+    margin-top: #{$i}px!important
+
+@for $i from 0 to 31
+  .mr#{$i}
+    margin-right: #{$i}px!important
+
+@for $i from 0 to 31
+  .mb#{$i}
+    margin-bottom: #{$i}px!important
+
+@for $i from 0 to 31
+  .ml#{$i}
+    margin-left: #{$i}px!important
+
+
+// useful paadding sizes (from 0 to 30)
+@for $i from 0 to 31
+  .pt#{$i}
+    padding-top: #{$i}px!important
+
+@for $i from 0 to 31
+  .pr#{$i}
+    padding-right: #{$i}px!important
+
+@for $i from 0 to 31
+  .pb#{$i}
+    padding-bottom: #{$i}px!important
+
+@for $i from 0 to 31
+  .pl#{$i}
+    padding-left: #{$i}px!important
+
+// useful font sizes (from 10px to 48px)
+@for $i from 10 to 49
+  .fs#{$i}
+    font-size: #{$i}px!important
+
+
+// clear float
+.clearfix
+  +clearfix()
+
+// set box sizing
+.box-sizing-border
+  +box-sizing(border-box)
+
+.box-sizing-content
+  +box-sizing(content-box)
+
+// float left or right
+.pull-right
+  float: right!important
+
+.pull-left
+  float: left!important
+
+
+// hide or show
+.hide
+  display: none!important
+
+.show
+  display: block!important
+
+.invisible
+  visibility: hidden!important
+
+.visible
+  visibility: visible!important
+
+
+// ul li reset
+.ul-reset
+  margin:  0
+  padding: 0
+  list-style: none
+
+// text overflow ellipsis
+.text-truncate
+  +text-truncate
+
+// text align
+.text-align-left
+  text-align: left
+
+.text-align-center
+  text-align: center
+
+.text-align-right
+  text-align: right
+
+
+// vertical align middle
+.vertical-align-middle
+  vertical-align: middle

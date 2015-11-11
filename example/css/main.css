@@ -403,10 +403,93 @@ body {
 /**
  * Common Utilities
  *
- * This is a set of classes or placeholters that will be used frequently, items which begin with %
- * are for extending (@extend %item) in your sass code, these code could help you reuse codes to to the extreme.
+ * This is a set of placeholters that will be used frequently, items which begin with %
+ * are for extending (@extend %item) in your sass code, these code could help you reuse
+ * codes to to the extreme.
  *
  * Note: items begin width % is for extending in your code
+ */
+/**
+ * Common Mixins
+ *
+ * This is a set of useful mixins which will be used frequently.
+ *
+ * 1. float clearfix
+ * 2. position absolute
+ * 3. background color variant for buttons or something like them
+ * 4. border radius
+ * 5. border triangle which is produced by pure CSS
+ * 6. breakpoint for responsible pages
+ * 7. do something on retina device or normal device (@media)
+ * 8. text overflow ellipsis
+ * 9. font face
+ *
+ */
+/**
+ * CSS3 Mixins
+ *
+ * This is a set of mixins which helps CSSers adapt some CSS3 prefix
+ * and use the native support of current browsers.
+ *
+ * 1. Box-model, Visual
+ * 2. transform, transition ,animtaion and perspective
+ *
+ * Note: Consult flex.sass for flexbox's mixins
+ *
+ */
+/**
+ * Box-model and Visual
+ */
+/**
+ * tranform, transition, animation and perspective
+ */
+/**
+ * Flex Mixins
+ *
+ * This is a set of mixins for those who want to mess around with flexbox
+ * using the native support of current browsers. For full support table
+ * check: http://caniuse.com/flexbox
+ *
+ * 1. Flex Container Properties
+ * 2. Flex Item Properties
+ *
+ */
+/*
+ * Functions
+ */
+/*
+ * Flex Container Properties
+ */
+/*
+ * Flex Item Properties
+ */
+/**
+ * flex-grow: <number> (default 0), flex-shrink: <number> (default 1), flex-basis: <length> | auto (default 1)
+ * flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+ */
+/**
+ * CSS3 Mixins
+ *
+ * This is a set of mixins which helps CSSers adapt some CSS3 prefix
+ * and use the native support of current browsers.
+ *
+ * 1. Box-model, Visual
+ * 2. transform, transition ,animtaion and perspective
+ *
+ * Note: Consult flex.sass for flexbox's mixins
+ *
+ */
+/**
+ * Box-model and Visual
+ */
+/**
+ * tranform, transition, animation and perspective
+ */
+/**
+ * Common Utilities
+ *
+ * This is a set of classesthat will be used frequently, these code could
+ * help you reuse codes to to the extreme.
  */
 /**
  * Common Mixins
@@ -1404,7 +1487,86 @@ body {
 /**
  * Flex Utilities
  *
- * This is a set of classes or placeholders that help you reuse codes to to the extreme.
+ * This is a set of placeholders that help you reuse codes to to the extreme.
+ *
+ * 1. Flex Container Properties
+ * 2. Flex Item Properties
+ *
+ * Note: items begin width % is for extending in your code
+ */
+/**
+ * Flex Mixins
+ *
+ * This is a set of mixins for those who want to mess around with flexbox
+ * using the native support of current browsers. For full support table
+ * check: http://caniuse.com/flexbox
+ *
+ * 1. Flex Container Properties
+ * 2. Flex Item Properties
+ *
+ */
+/*
+ * Functions
+ */
+/*
+ * Flex Container Properties
+ */
+/*
+ * Flex Item Properties
+ */
+/**
+ * flex-grow: <number> (default 0), flex-shrink: <number> (default 1), flex-basis: <length> | auto (default 1)
+ * flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+ */
+/**
+ * Flex Container Properties
+ */
+/**
+ * ennable container to be a flex container as well as block element and make items
+ * in the container layout horizontal
+ */
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -ms-flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  flex: none; }
+
+/**
+ * ennable container to be a flex container as well as inline-block element and make
+ * items in the container layout horizontal
+ */
+/**
+ * ennable container to be a flex container as well as block element and make items in
+ * the container layout vertical
+ */
+/**
+ * ennable container to be a flex container as well as inline-block element and make
+ * items in the container layout vertical
+ */
+/*
+ * By default, children stretch to fit the cross-axis, bellow class will enable them to start,
+ * center, baseline or end accros the main axis.
+ */
+.nav {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between; }
+
+/**
+ * Flex Item Properties
+ */
+/**
+ * Flex Utilities
+ *
+ * This is a set of classes that help you reuse codes to to the extreme.
  *
  * 1. Flex Container Properties
  * 2. Flex Item Properties
@@ -1468,18 +1630,6 @@ body {
   flex-direction: row;
   flex: none; }
 
-.nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: horizontal;
-  -ms-flex-direction: row;
-  -webkit-flex-direction: row;
-  flex-direction: row;
-  flex: none; }
-
 /**
  * ennable container to be a flex container as well as inline-block element and make
  * items in the container layout horizontal
@@ -1532,62 +1682,55 @@ body {
  * By default, children stretch to fit the cross-axis, bellow class will enable them to start,
  * center, baseline or end accros the main axis.
  */
-.start, .align-content-start {
+.start, .align-start {
   -webkit-box-align: start;
   -ms-flex-align: start;
   -webkit-align-items: flex-start;
   -moz-align-items: flex-start;
   align-items: flex-start; }
 
-.center, .align-content-center {
+.center, .align-center {
   -webkit-box-align: center;
   -ms-flex-align: center;
   -webkit-align-items: center;
   -moz-align-items: center;
   align-items: center; }
 
-.baseline, .align-content-baseline {
+.baseline, .align-baseline {
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
   -webkit-align-items: baseline;
   -moz-align-items: baseline;
   align-items: baseline; }
 
-.end, .align-content-end {
+.end, .align-end {
   -webkit-box-align: end;
   -ms-flex-align: end;
   -webkit-align-items: flex-end;
   -moz-align-items: flex-end;
   align-items: flex-end; }
 
-.center-justify, .justify-content-center {
+.center-justify, .justify-center {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   -moz-justify-content: center;
   justify-content: center; }
 
-.end-justify, .justify-content-end {
+.end-justify, .justify-end {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   -webkit-justify-content: flex-end;
   -moz-justify-content: flex-end;
   justify-content: flex-end; }
 
-.around-justify, .justify-content-space-around {
+.around-justify, .justify-space-around {
   -ms-flex-pack: distribute;
   -webkit-justify-content: space-around;
   -moz-justify-content: space-around;
   justify-content: space-around; }
 
-.justify, .justify-content-space-between {
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  -webkit-justify-content: space-between;
-  -moz-justify-content: space-between;
-  justify-content: space-between; }
-
-.nav {
+.justify, .justify-space-between {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   -webkit-justify-content: space-between;
