@@ -159,7 +159,8 @@
 
 =transition($values...)
   $transitions: ()
-  @each $declaration in $values
+  @for $j from 1 through length($values)
+    $declaration: nth($values, $j)
     $prop: nth($declaration, 1)
     $prop-opts: ()
     $length: length($declaration)
